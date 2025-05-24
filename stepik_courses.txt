@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Epic Guide to Stepik",
+        "description": "This is a collection on lessons, describing what is Stepik and how to use it in teaching.",
+        "rating": "4.7",
+        "url": "https:\/\/stepik.org\/course\/1\/promo"
+    },
+    {
+        "id": 7,
+        "title": "Программирование на языке C++",
+        "description": "Данный базовый курс повествует об основных средствах языка C++. Особое внимание уделяется обсуждению базовых принципов работы программ, а также процессу их компиляции. Курс далеко не исчерпывающий и покрывает лишь небольшую часть стандарта языка C++, однако мы постарались рассказать о наиболее важных возможностях этого языка.",
+        "rating": "4.6",
+        "url": "https:\/\/stepik.org\/course\/7\/promo"
+    },
+    {
+        "id": 10,
+        "title": "Python for Programmers",
+        "description": "Based on the presentation by Alex Martelli.",
+        "rating": "2.6",
+        "url": "https:\/\/stepik.org\/course\/10\/promo"
+    }
+]

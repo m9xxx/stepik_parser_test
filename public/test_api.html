@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Aggregator API Tester</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .endpoint-section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        .endpoint-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .method-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .get { background: #28a745; }
+        .post { background: #007bff; }
+        .put { background: #ffc107; color: #333; }
+        .delete { background: #dc3545; }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        .response {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .input-group input {
+            flex: 1;
+        }
+        .status-success { color: #28a745; }
+        .status-error { color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Course Aggregator API Tester</h1>
+        
+        <!-- Base URL Setting -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">⚙️ Конфигурация</div>
+            <label>Base URL API:</label>
+            <input type="text" id="baseUrl" value="http://localhost/api/v1" placeholder="http://localhost/api/v1">
+        </div>
+
+        <!-- Get All Courses -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge get">GET</span>
+                Получить все курсы
+            </div>
+            <p><code>/courses</code></p>
+            <button onclick="getAllCourses()">Выполнить запрос</button>
+            <div id="allCoursesResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Search Courses -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge get">GET</span>
+                Поиск курсов
+            </div>
+            <p><code>/courses/search</code></p>
+            <div class="input-group">
+                <input type="text" id="searchQuery" placeholder="Поисковый запрос">
+                <select id="searchSource">
+                    <option value="">Все источники</option>
+                    <option value="stepik">Stepik</option>
+                    <option value="skillbox">Skillbox</option>
+                    <option value="geekbrains">GeekBrains</option>
+                </select>
+                <input type="number" id="searchRating" placeholder="Мин. рейтинг" step="0.1" min="0" max="5">
+            </div>
+            <button onclick="searchCourses()">Поиск</button>
+            <div id="searchResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Get Course by ID -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge get">GET</span>
+                Получить курс по ID
+            </div>
+            <p><code>/courses/{id}</code></p>
+            <input type="text" id="courseId" placeholder="ID курса">
+            <button onclick="getCourseById()">Получить курс</button>
+            <div id="courseByIdResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Get Course by Source and ID -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge get">GET</span>
+                Получить курс по источнику и ID
+            </div>
+            <p><code>/courses/{source}/{id}</code></p>
+            <div class="input-group">
+                <select id="courseSource">
+                    <option value="stepik">Stepik</option>
+                    <option value="skillbox">Skillbox</option>
+                    <option value="geekbrains">GeekBrains</option>
+                </select>
+                <input type="text" id="courseExternalId" placeholder="Внешний ID курса">
+            </div>
+            <button onclick="getCourseBySourceAndId()">Получить курс</button>
+            <div id="courseBySourceResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Import Courses -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge post">POST</span>
+                Импорт курсов из JSON
+            </div>
+            <p><code>/import</code></p>
+            <button onclick="importCourses()">Импортировать курсы</button>
+            <div id="importResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Parser Statistics -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge get">GET</span>
+                Статистика парсеров
+            </div>
+            <p><code>/parsers/statistics</code></p>
+            <button onclick="getParserStatistics()">Получить статистику</button>
+            <div id="statisticsResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Run Specific Parser -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge post">POST</span>
+                Запустить конкретный парсер
+            </div>
+            <p><code>/parsers/run/{parser}</code></p>
+            <select id="specificParser">
+                <option value="stepik">Stepik</option>
+                <option value="skillbox">Skillbox</option>
+                <option value="geekbrains">GeekBrains</option>
+            </select>
+            <button onclick="runSpecificParser()">Запустить парсер</button>
+            <div id="specificParserResponse" class="response" style="display: none;"></div>
+        </div>
+
+        <!-- Run All Parsers -->
+        <div class="endpoint-section">
+            <div class="endpoint-title">
+                <span class="method-badge post">POST</span>
+                Запустить все парсеры
+            </div>
+            <p><code>/parsers</code></p>
+            <button onclick="runAllParsers()">Запустить все парсеры</button>
+            <div id="allParsersResponse" class="response" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        function getBaseUrl() {
+            return document.getElementById('baseUrl').value;
+        }
+
+        function showResponse(elementId, response, status) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            
+            const statusClass = status >= 200 && status < 300 ? 'status-success' : 'status-error';
+            const statusText = `Status: ${status}\n\n`;
+            
+            element.innerHTML = `<span class="${statusClass}">${statusText}</span>${JSON.stringify(response, null, 2)}`;
+        }
+
+        async function makeRequest(url, method = 'GET', body = null) {
+            try {
+                const options = {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                };
+                
+                if (body) {
+                    options.body = JSON.stringify(body);
+                }
+
+                const response = await fetch(url, options);
+                const data = await response.json();
+                
+                return { data, status: response.status };
+            } catch (error) {
+                return { 
+                    data: { error: 'Network error: ' + error.message }, 
+                    status: 0 
+                };
+            }
+        }
+
+        async function getAllCourses() {
+            const url = `${getBaseUrl()}/courses`;
+            const { data, status } = await makeRequest(url);
+            showResponse('allCoursesResponse', data, status);
+        }
+
+        async function searchCourses() {
+            const query = document.getElementById('searchQuery').value;
+            const source = document.getElementById('searchSource').value;
+            const rating = document.getElementById('searchRating').value;
+            
+            let url = `${getBaseUrl()}/courses/search`;
+            const params = new URLSearchParams();
+            
+            if (query) params.append('q', query);
+            if (source) params.append('source', source);
+            if (rating) params.append('rating', rating);
+            
+            if (params.toString()) {
+                url += '?' + params.toString();
+            }
+            
+            const { data, status } = await makeRequest(url);
+            showResponse('searchResponse', data, status);
+        }
+
+        async function getCourseById() {
+            const id = document.getElementById('courseId').value;
+            if (!id) {
+                alert('Введите ID курса');
+                return;
+            }
+            
+            const url = `${getBaseUrl()}/courses/${id}`;
+            const { data, status } = await makeRequest(url);
+            showResponse('courseByIdResponse', data, status);
+        }
+
+        async function getCourseBySourceAndId() {
+            const source = document.getElementById('courseSource').value;
+            const id = document.getElementById('courseExternalId').value;
+            
+            if (!id) {
+                alert('Введите внешний ID курса');
+                return;
+            }
+            
+            const url = `${getBaseUrl()}/courses/${source}/${id}`;
+            const { data, status } = await makeRequest(url);
+            showResponse('courseBySourceResponse', data, status);
+        }
+
+        async function importCourses() {
+            const url = `${getBaseUrl()}/import`;
+            const { data, status } = await makeRequest(url, 'POST');
+            showResponse('importResponse', data, status);
+        }
+
+        async function getParserStatistics() {
+            const url = `${getBaseUrl()}/parsers/statistics`;
+            const { data, status } = await makeRequest(url);
+            showResponse('statisticsResponse', data, status);
+        }
+
+        async function runSpecificParser() {
+            const parser = document.getElementById('specificParser').value;
+            const url = `${getBaseUrl()}/parsers/run/${parser}`;
+            const { data, status } = await makeRequest(url, 'POST');
+            showResponse('specificParserResponse', data, status);
+        }
+
+        async function runAllParsers() {
+            const url = `${getBaseUrl()}/parsers`;
+            const { data, status } = await makeRequest(url, 'POST');
+            showResponse('allParsersResponse', data, status);
+        }
+
+        // Автоматическое определение базового URL при загрузке страницы
+        window.onload = function() {
+            const currentUrl = window.location.href;
+            const baseUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/')) + '/api/v1';
+            document.getElementById('baseUrl').value = baseUrl;
+        }
+    </script>
+</body>
+</html>

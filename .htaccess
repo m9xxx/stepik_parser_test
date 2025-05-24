@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Перенаправление API запросов на api.php
+RewriteCond %{REQUEST_URI} ^/api/v1/
+RewriteRule ^api/v1/(.*)$ /api.php [L]
+
+# Все остальные запросы обрабатываются index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [L]

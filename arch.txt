@@ -1,0 +1,58 @@
+project-root/
+│
+├── backend/
+│   ├── app/
+│   │   ├── Controllers/
+│   │   │   ├── CourseController.php
+│   │   │   └── ParserController.php
+│   │   │
+│   │   ├── Models/
+│   │   │   ├── Course.php
+│   │   │   └── Parser.php
+│   │   │
+│   │   ├── Services/
+│   │   │   ├── CourseService.php
+│   │   │   └── ParserService.php
+│   │   │
+│   │   └── Utils/
+│   │       └── JsonDataReader.php
+
+│
+└── frontend/
+    └── (Vue.js проект)
+
+    project-root/
+│
+├── backend/
+│   ├── parsers/ 
+│   │   ├── stepik_stableParser.php
+│   │   └── skillboxParser.php
+│   │
+│   ├── app/
+│   │   ├── Controllers/
+│   │   │   ├── CourseController.php
+│   │   │   └── ParserController.php
+│   │   │
+│   │   ├── Models/
+│   │   │   ├── Course.php
+│   │   │   └── Parser.php         # Модель парсера
+│   │   │
+│   │   ├── Services/
+│   │   │   ├── CourseService.php
+│   │   │   └── ParserService.php  # Сервис для работы с парсерами
+│   │   │
+│   │   └── Utils/
+│   │       └── JsonDataReader.php
+│   │
+│   ├── config/
+│   │   └── app.php
+│   │
+│   ├── data/
+│   │   ├── stepik_courses.json
+│   │   └── skillbox_courses.json
+│   │
+│   ├── routes/
+│   │   └── api.php
+│   │
+│   └── public/
+│       └── index.php

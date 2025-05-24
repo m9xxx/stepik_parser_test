@@ -1,0 +1,21 @@
+api/
+├── config/
+│   └── config.php           # Конфигурация приложения
+├── controllers/
+│   ├── BaseController.php   # Абстрактный базовый контроллер
+│   ├── SkillboxController.php # Контроллер для Skillbox
+│   └── StepikController.php # Контроллер для Stepik
+├── models/
+│   ├── Course.php           # Модель для курса
+│   └── CoursesCollection.php # Коллекция курсов
+├── services/
+│   ├── CourseService.php    # Сервис для работы с курсами
+│   ├── SkillboxService.php  # Сервис для работы с данными Skillbox
+│   └── StepikService.php    # Сервис для работы с данными Stepik
+├── utils/
+│   ├── JsonFileHandler.php  # Утилита для работы с JSON файлами
+│   └── Response.php         # Класс для формирования HTTP ответов
+├── routes/
+│   └── api.php              # Маршруты API
+├── index.php                # Входная точка API
+└── .htaccess                # Конфигурация для Apache
