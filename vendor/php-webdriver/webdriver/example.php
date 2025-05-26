@@ -1,5 +1,7 @@
 <?php
+
 // An example of using php-webdriver.
+// Do not forget to run composer install before. You must also have Selenium server started and listening on port 4444.
 
 namespace Facebook\WebDriver;
 
@@ -8,47 +10,65 @@ use Facebook\WebDriver\Remote\RemoteWebDriver;
 
 require_once('vendor/autoload.php');
 
-// start Firefox with 5 second timeout
-$host = 'http://localhost:4444/wd/hub'; // this is the default
-$capabilities = DesiredCapabilities::firefox();
-$driver = RemoteWebDriver::create($host, $capabilities, 5000);
+// This is where Selenium, Chromedriver and Geckodriver 4 listens by default. For Selenium 2/3, use http://localhost:4444/wd/hub
+$host = 'http://localhost:4444/';
 
-// navigate to 'http://docs.seleniumhq.org/'
-$driver->get('http://docs.seleniumhq.org/');
+$capabilities = DesiredCapabilities::chrome();
 
-// adding cookie
-$driver->manage()->deleteAllCookies();
-$driver->manage()->addCookie(array(
-  'name' => 'cookie_name',
-  'value' => 'cookie_value',
-));
-$cookies = $driver->manage()->getCookies();
-print_r($cookies);
+$driver = RemoteWebDriver::create($host, $capabilities);
 
-// click the link 'About'
-$link = $driver->findElement(
-  WebDriverBy::id('menu_about')
+// navigate to Selenium page on Wikipedia
+$driver->get('https://en.wikipedia.org/wiki/Selenium_(software)');
+
+// write 'PHP' in the search box
+$driver->findElement(WebDriverBy::id('searchInput')) // find search input element
+    ->sendKeys('PHP') // fill the search box
+    ->submit(); // submit the whole form
+
+// wait until 'PHP' is shown in the page heading element
+$driver->wait()->until(
+    WebDriverExpectedCondition::elementTextContains(WebDriverBy::id('firstHeading'), 'PHP')
 );
-$link->click();
+
+// print title of the current page to output
+echo "The title is '" . $driver->getTitle() . "'\n";
+
+// print URL of current page to output
+echo "The current URL is '" . $driver->getCurrentURL() . "'\n";
+
+// find element of 'History' item in menu
+$historyButton = $driver->findElement(
+    WebDriverBy::cssSelector('#ca-history a')
+);
+
+// read text of the element and print it to output
+echo "About to click to button with text: '" . $historyButton->getText() . "'\n";
+
+// click the element to navigate to revision history page
+$historyButton->click();
+
+// wait until the target page is loaded
+$driver->wait()->until(
+    WebDriverExpectedCondition::titleContains('Revision history')
+);
 
 // print the title of the current page
 echo "The title is '" . $driver->getTitle() . "'\n";
 
 // print the URI of the current page
+
 echo "The current URI is '" . $driver->getCurrentURL() . "'\n";
 
-// Search 'php' in the search box
-$input = $driver->findElement(
-  WebDriverBy::id('q')
-);
-$input->sendKeys('php')->submit();
+// delete all cookies
+$driver->manage()->deleteAllCookies();
 
-// wait at most 10 seconds until at least one result is shown
-$driver->wait(10)->until(
-  WebDriverExpectedCondition::presenceOfAllElementsLocatedBy(
-    WebDriverBy::className('gsc-result')
-  )
-);
+// add new cookie
+$cookie = new Cookie('cookie_set_by_selenium', 'cookie_value');
+$driver->manage()->addCookie($cookie);
 
-// close the Firefox
+// dump current cookies to output
+$cookies = $driver->manage()->getCookies();
+print_r($cookies);
+
+// terminate the session and close the browser
 $driver->quit();

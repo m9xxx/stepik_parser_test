@@ -2,6 +2,9 @@
 
 namespace Facebook\WebDriver\Exception;
 
-class NoStringException extends WebDriverException {
-
+/**
+ * @deprecated Removed in W3C WebDriver, see https://github.com/php-webdriver/php-webdriver/pull/686
+ */
+class NoStringException extends WebDriverException
+{
 }

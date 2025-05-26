@@ -1,40 +1,25 @@
-<?php
-// Copyright 2004-present Facebook. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+<?php declare(strict_types=1);
 
 namespace Facebook\WebDriver\Interactions\Internal;
 
-class WebDriverCoordinatesTest extends \PHPUnit_Framework_TestCase {
-  public function testConstruct() {
-    $in_view_port = function() { };
-    $on_page = function() { };
+use Facebook\WebDriver\WebDriverPoint;
+use PHPUnit\Framework\TestCase;
 
-    $webDriverCoordinates = new WebDriverCoordinates(null, $in_view_port, $on_page, 'auxiliary');
+class WebDriverCoordinatesTest extends TestCase
+{
+    public function testConstruct(): void
+    {
+        $in_view_port = function () {
+            return new WebDriverPoint(0, 0);
+        };
+        $on_page = function () {
+            return new WebDriverPoint(10, 10);
+        };
 
-    self::assertAttributeEquals(null, 'onScreen', $webDriverCoordinates);
-    self::assertAttributeEquals($in_view_port, 'inViewPort', $webDriverCoordinates);
-    self::assertAttributeEquals($on_page, 'onPage', $webDriverCoordinates);
-    self::assertAttributeEquals('auxiliary', 'auxiliary', $webDriverCoordinates);
-  }
+        $webDriverCoordinates = new WebDriverCoordinates(null, $in_view_port, $on_page, 'auxiliary');
 
-  public function testGetAuxiliary()
-  {
-    $in_view_port = function() { };
-    $on_page = function() { };
-
-    $webDriverCoordinates = new WebDriverCoordinates(null, $in_view_port, $on_page, 'auxiliary');
-
-    self::assertEquals('auxiliary', $webDriverCoordinates->getAuxiliary());
-  }
+        $this->assertEquals(new WebDriverPoint(0, 0), $webDriverCoordinates->inViewPort());
+        $this->assertEquals(new WebDriverPoint(10, 10), $webDriverCoordinates->onPage());
+        $this->assertSame('auxiliary', $webDriverCoordinates->getAuxiliary());
+    }
 }
