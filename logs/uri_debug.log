@@ -1,0 +1,98 @@
+2025-05-26 10:40:09 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-05-26 10:40:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 10:53:20 Original URI: /stepik_parser_test/public/api/v1/courses/search
+2025-05-26 10:53:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-05-26 10:53:46 Original URI: /stepik_parser_test/public/api/v1/courses/1
+2025-05-26 10:53:46 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => 1
+)
+
+2025-05-26 10:55:17 Original URI: /stepik_parser_test/public/api/v1/import
+2025-05-26 10:55:17 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => import
+)
+
+2025-05-26 10:55:52 Original URI: /stepik_parser_test/public/api/v1/import
+2025-05-26 10:55:52 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => import
+)
+
+2025-05-26 10:57:50 Original URI: /stepik_parser_test/public/api/v1/import
+2025-05-26 10:57:50 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => import
+)
+
+2025-05-26 10:58:17 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-05-26 10:58:17 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 11:03:30 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-05-26 11:03:30 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 11:03:39 Original URI: /stepik_parser_test/public/api/v1/courses?source=stepik
+2025-05-26 11:03:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 11:09:08 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-05-26 11:09:08 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 11:09:22 Original URI: /stepik_parser_test/public/api/v1/courses?source=stepik
+2025-05-26 11:09:22 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-05-26 11:10:39 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-05-26 11:10:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
