@@ -14,10 +14,9 @@
 2025-05-26 11:09:08 - GET /stepik_parser_test/public/api/v1/courses
 2025-05-26 11:09:22 - GET /stepik_parser_test/public/api/v1/courses?source=stepik
 2025-05-26 11:10:39 - GET /stepik_parser_test/public/api/v1/courses
-2025-05-27 12:28:51 - GET /stepik_parser_test/api/v1/courses
-2025-05-27 12:29:09 - GET /stepik_parser_test/api/v1/courses
-2025-05-27 12:29:10 - GET /stepik_parser_test/public/api/v1/courses
-2025-05-27 12:32:06 - GET /stepik_parser_test/public/api/v1/courses
-2025-05-27 12:59:13 - GET /stepik_parser_test/public/api/v1/courses
-2025-05-27 14:14:14 - POST /stepik_parser_test/public/api/v1/auth/register
-2025-05-27 15:31:54 - POST /stepik_parser_test/public/api.php/import
+2025-05-27 17:54:30 - GET /stepik_parser_test/public/api/v1/courses
+2025-05-27 17:54:45 - GET /stepik_parser_test/public/api/v1/courses
+2025-05-27 17:54:46 - GET /stepik_parser_test/public/api/v1/courses
+2025-05-27 17:54:46 - GET /stepik_parser_test/public/api/v1/courses
+2025-05-27 17:54:47 - GET /stepik_parser_test/public/api/v1/courses
+2025-05-27 17:54:47 - GET /stepik_parser_test/public/api/v1/courses

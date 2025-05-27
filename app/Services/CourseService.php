@@ -15,7 +15,7 @@ class CourseService {
 
     // Получить все курсы из БД
     public function getAllCourses() {
-        return CourseDB::search();
+        return CourseDB::search(['limit' => 1000]); // Увеличиваем лимит до 1000 курсов
     }
 
     // Получить курс по ID из БД
@@ -49,11 +49,16 @@ class CourseService {
             $platform = Platform::findByName($filters['source']);
             if ($platform) {
                 $searchFilters['platform_id'] = $platform->getId();
+                $searchFilters['limit'] = 1000; // Увеличиваем лимит для получения всех курсов платформы
             }
         }
         
         if (!empty($filters['rating'])) {
             $searchFilters['min_rating'] = $filters['rating'];
+        }
+
+        if (empty($searchFilters['limit'])) {
+            $searchFilters['limit'] = 1000; // Оставляем стандартный лимит если не указан источник
         }
 
         return CourseDB::search($searchFilters);

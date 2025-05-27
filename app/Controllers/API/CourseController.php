@@ -16,7 +16,14 @@ class CourseController {
 
     // Получение всех курсов
     public function index() {
-        $courses = $this->courseService->getAllCourses();
+        $source = $_GET['source'] ?? null;
+        $filters = [];
+        
+        if ($source) {
+            $filters['source'] = $source;
+        }
+        
+        $courses = $this->courseService->searchCourses('', $filters);
         return $this->jsonResponse(
             array_map(function($course) { return $course->toArray(); }, $courses)
         );

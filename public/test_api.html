@@ -103,7 +103,7 @@
         <div class="endpoint-section">
             <div class="endpoint-title">⚙️ Конфигурация</div>
             <label>Base URL API:</label>
-            <input type="text" id="baseUrl" value="http://localhost/api/v1" placeholder="http://localhost/api/v1">
+            <input type="text" id="baseUrl" value="/stepik_parser_test/public/api/v1" placeholder="/stepik_parser_test/public/api/v1">
         </div>
 
         <!-- Get All Courses -->
@@ -198,48 +198,39 @@
                 Запустить конкретный парсер
             </div>
             <p><code>/parsers/run/{parser}</code></p>
-            <select id="specificParser">
+            <select id="parserName">
                 <option value="stepik">Stepik</option>
                 <option value="skillbox">Skillbox</option>
                 <option value="geekbrains">GeekBrains</option>
             </select>
-            <button onclick="runSpecificParser()">Запустить парсер</button>
-            <div id="specificParserResponse" class="response" style="display: none;"></div>
-        </div>
-
-        <!-- Run All Parsers -->
-        <div class="endpoint-section">
-            <div class="endpoint-title">
-                <span class="method-badge post">POST</span>
-                Запустить все парсеры
-            </div>
-            <p><code>/parsers</code></p>
-            <button onclick="runAllParsers()">Запустить все парсеры</button>
-            <div id="allParsersResponse" class="response" style="display: none;"></div>
+            <button onclick="runParser()">Запустить парсер</button>
+            <div id="runParserResponse" class="response" style="display: none;"></div>
         </div>
     </div>
 
     <script>
-        function getBaseUrl() {
-            return document.getElementById('baseUrl').value;
-        }
-
-        function showResponse(elementId, response, status) {
+        // Вспомогательная функция для отображения ответа
+        function displayResponse(elementId, status, data) {
             const element = document.getElementById(elementId);
             element.style.display = 'block';
-            
-            const statusClass = status >= 200 && status < 300 ? 'status-success' : 'status-error';
-            const statusText = `Status: ${status}\n\n`;
-            
-            element.innerHTML = `<span class="${statusClass}">${statusText}</span>${JSON.stringify(response, null, 2)}`;
+            element.innerHTML = `Status: ${status}\n\n${JSON.stringify(data, null, 2)}`;
         }
 
-        async function makeRequest(url, method = 'GET', body = null) {
+        // Получить базовый URL из поля ввода
+        function getBaseUrl() {
+            return document.getElementById('baseUrl').value.trim();
+        }
+
+        // Общая функция для выполнения запросов
+        async function makeRequest(endpoint, method = 'GET', body = null) {
             try {
+                const baseUrl = getBaseUrl();
+                const url = `${baseUrl}${endpoint}`;
                 const options = {
                     method: method,
                     headers: {
                         'Content-Type': 'application/json',
+                        'Accept': 'application/json'
                     }
                 };
                 
@@ -249,98 +240,69 @@
 
                 const response = await fetch(url, options);
                 const data = await response.json();
-                
-                return { data, status: response.status };
+                return { status: response.status, data };
             } catch (error) {
                 return { 
-                    data: { error: 'Network error: ' + error.message }, 
-                    status: 0 
+                    status: 0, 
+                    data: { error: error.message } 
                 };
             }
         }
 
+        // Получить все курсы
         async function getAllCourses() {
-            const url = `${getBaseUrl()}/courses`;
-            const { data, status } = await makeRequest(url);
-            showResponse('allCoursesResponse', data, status);
+            const { status, data } = await makeRequest('/courses');
+            displayResponse('allCoursesResponse', status, data);
         }
 
+        // Поиск курсов
         async function searchCourses() {
             const query = document.getElementById('searchQuery').value;
             const source = document.getElementById('searchSource').value;
             const rating = document.getElementById('searchRating').value;
             
-            let url = `${getBaseUrl()}/courses/search`;
+            let endpoint = '/courses/search?';
             const params = new URLSearchParams();
-            
             if (query) params.append('q', query);
             if (source) params.append('source', source);
             if (rating) params.append('rating', rating);
             
-            if (params.toString()) {
-                url += '?' + params.toString();
-            }
-            
-            const { data, status } = await makeRequest(url);
-            showResponse('searchResponse', data, status);
+            const { status, data } = await makeRequest(`${endpoint}${params}`);
+            displayResponse('searchResponse', status, data);
         }
 
+        // Получить курс по ID
         async function getCourseById() {
             const id = document.getElementById('courseId').value;
-            if (!id) {
-                alert('Введите ID курса');
-                return;
-            }
-            
-            const url = `${getBaseUrl()}/courses/${id}`;
-            const { data, status } = await makeRequest(url);
-            showResponse('courseByIdResponse', data, status);
+            const { status, data } = await makeRequest(`/courses/${id}`);
+            displayResponse('courseByIdResponse', status, data);
         }
 
+        // Получить курс по источнику и ID
         async function getCourseBySourceAndId() {
             const source = document.getElementById('courseSource').value;
             const id = document.getElementById('courseExternalId').value;
-            
-            if (!id) {
-                alert('Введите внешний ID курса');
-                return;
-            }
-            
-            const url = `${getBaseUrl()}/courses/${source}/${id}`;
-            const { data, status } = await makeRequest(url);
-            showResponse('courseBySourceResponse', data, status);
+            const { status, data } = await makeRequest(`/courses/${source}/${id}`);
+            displayResponse('courseBySourceResponse', status, data);
         }
 
+        // Импорт курсов
         async function importCourses() {
-            const url = `${getBaseUrl()}/import`;
-            const { data, status } = await makeRequest(url, 'POST');
-            showResponse('importResponse', data, status);
+            const { status, data } = await makeRequest('/import', 'POST');
+            displayResponse('importResponse', status, data);
         }
 
+        // Получить статистику парсеров
         async function getParserStatistics() {
-            const url = `${getBaseUrl()}/parsers/statistics`;
-            const { data, status } = await makeRequest(url);
-            showResponse('statisticsResponse', data, status);
+            const { status, data } = await makeRequest('/parsers/statistics');
+            displayResponse('statisticsResponse', status, data);
         }
 
-        async function runSpecificParser() {
-            const parser = document.getElementById('specificParser').value;
-            const url = `${getBaseUrl()}/parsers/run/${parser}`;
-            const { data, status } = await makeRequest(url, 'POST');
-            showResponse('specificParserResponse', data, status);
-        }
-
-        async function runAllParsers() {
-            const url = `${getBaseUrl()}/parsers`;
-            const { data, status } = await makeRequest(url, 'POST');
-            showResponse('allParsersResponse', data, status);
-        }
-
-        // Автоматическое определение базового URL при загрузке страницы
-        window.onload = function() {
-            const currentUrl = window.location.href;
-            const baseUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/')) + '/api/v1';
-            document.getElementById('baseUrl').value = baseUrl;
+        // Запустить конкретный парсер
+        async function runParser() {
+            const parser = document.getElementById('parserName').value;
+            const { status, data } = await makeRequest(`/parsers/run/${parser}`, 'POST');
+            displayResponse('runParserResponse', status, data);
         }
     </script>
 </body>

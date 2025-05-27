@@ -1,14 +1,22 @@
 <?php
 // public/api.php
 
-// Включаем отображение ошибок только для разработки
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
 // Включаем отображение ошибок для отладки
 error_reporting(E_ALL);
 ini_set('display_errors', 1); // Временно включаем отображение ошибок для отладки
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/../logs/php_errors.log');
+
+// Создаем директорию для логов, если её нет
+if (!file_exists(__DIR__ . '/../logs')) {
+    mkdir(__DIR__ . '/../logs', 0777, true);
+}
+
+// Логируем все входящие запросы
+file_put_contents(__DIR__ . '/../logs/api_requests.log', 
+    date('Y-m-d H:i:s') . " - " . $_SERVER['REQUEST_METHOD'] . " " . $_SERVER['REQUEST_URI'] . "\n", 
+    FILE_APPEND
+);
 
 // Включаем заголовки для CORS
 header("Access-Control-Allow-Origin: *");
@@ -29,65 +37,65 @@ try {
     // Получаем URI запроса
     $uri = $_SERVER['REQUEST_URI'];
     
-    // Убираем query string из URI
-    $uri = explode('?', $uri)[0];
-    
-    // Убираем базовый путь проекта и api.php из URI
-    $uri = str_replace('/stepik_parser_test', '', $uri);
-    $uri = str_replace('/public/api.php', '', $uri);
-    
-    // Разбираем URI на части
-    $uriParts = explode('/', trim($uri, '/'));
-    
-    // Пропускаем части api/v1 если они есть
-    if (count($uriParts) >= 2 && $uriParts[0] === 'api' && $uriParts[1] === 'v1') {
-        $uriParts = array_slice($uriParts, 2);
+    // Логируем исходный URI для отладки
+    file_put_contents(__DIR__ . '/../logs/uri_debug.log', 
+        date('Y-m-d H:i:s') . " Original URI: " . $uri . "\n", 
+        FILE_APPEND
+    );
+
+    // Убираем базовый путь проекта
+    $basePathToRemove = '/stepik_parser_test/public';
+    if (strpos($uri, $basePathToRemove) === 0) {
+        $uri = substr($uri, strlen($basePathToRemove));
     }
     
+    // Убираем query string из URI если есть
+    $uri = strtok($uri, '?');
+    
+    // Разбираем URI на части
+    $uriParts = array_values(array_filter(explode('/', $uri)));
+    
+    // Логируем обработанные части URI для отладки
+    file_put_contents(__DIR__ . '/../logs/uri_debug.log', 
+        date('Y-m-d H:i:s') . " Processed URI parts: " . print_r($uriParts, true) . "\n", 
+        FILE_APPEND
+    );
+
     // Инициализируем необходимые переменные
     $controller = null;
     $action = null;
     $params = [];
     
     // Определяем маршрут
-    if (empty($uriParts[0]) || $uriParts[0] === 'courses') {
+    if (empty($uriParts) || 
+        (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'courses')) {
         $controller = new \App\Controllers\API\CourseController();
         
-        if (empty($uriParts[0]) || count($uriParts) === 1) {
+        if (empty($uriParts) || count($uriParts) === 3) {
             // GET /api/v1/courses - Получение всех курсов
             $action = 'index';
-        } elseif ($uriParts[1] === 'search') {
-            // GET /api/v1/courses/search?q=query - Поиск курсов
+        } elseif ($uriParts[3] === 'search') {
+            // GET /api/v1/courses/search - Поиск курсов
             $action = 'search';
-        } elseif (count($uriParts) === 2) {
+        } elseif (count($uriParts) === 4 && is_numeric($uriParts[3])) {
             // GET /api/v1/courses/{id} - Получение курса по ID
             $action = 'show';
-            $params[] = $uriParts[1];
-        } elseif (count($uriParts) === 3) {
-            // GET /api/v1/courses/{source}/{id} - Получение курса по источнику и ID
-            $action = 'showBySourceAndId';
-            $params[] = $uriParts[1]; // source
-            $params[] = $uriParts[2]; // id
+            $params[] = $uriParts[3];
         }
-    } elseif ($uriParts[0] === 'parsers') {
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'parsers') {
         $controller = new \App\Controllers\API\CourseController();
         
-        if (count($uriParts) === 1) {
-            // POST /api/v1/parsers - Запуск всех парсеров
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $action = 'runAllParsers';
-            }
-        } elseif ($uriParts[1] === 'statistics') {
+        if ($uriParts[3] === 'statistics') {
             // GET /api/v1/parsers/statistics - Получение статистики парсеров
             $action = 'getParserStatistics';
-        } elseif ($uriParts[1] === 'run' && count($uriParts) === 3) {
+        } elseif ($uriParts[3] === 'run' && isset($uriParts[4])) {
             // POST /api/v1/parsers/run/{parser} - Запуск конкретного парсера
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $action = 'runParser';
-                $params[] = $uriParts[2]; // parser name
+                $params[] = $uriParts[4];
             }
         }
-    } elseif ($uriParts[0] === 'import') {
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'import') {
         $controller = new \App\Controllers\API\CourseController();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $action = 'importCourses';
@@ -102,8 +110,15 @@ try {
         'controller' => $controller ? get_class($controller) : 'not found',
         'action' => $action,
         'params' => $params,
-        'method' => $_SERVER['REQUEST_METHOD']
+        'method' => $_SERVER['REQUEST_METHOD'],
+        'server' => $_SERVER
     ];
+    
+    // Логируем отладочную информацию
+    file_put_contents(__DIR__ . '/../logs/api_debug.log', 
+        date('Y-m-d H:i:s') . " - Debug Info:\n" . print_r($debug, true) . "\n\n", 
+        FILE_APPEND
+    );
     
     // Если контроллер и действие определены, вызываем метод
     if ($controller && $action && method_exists($controller, $action)) {

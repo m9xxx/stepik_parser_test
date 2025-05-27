@@ -1,20 +1,18 @@
 RewriteEngine On
 RewriteBase /stepik_parser_test/public/
 
-# Включаем CORS заголовки
-Header always set Access-Control-Allow-Origin "*"
-Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE"
-Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
-Header always set Access-Control-Max-Age "1000"
-Header always set Access-Control-Allow-Credentials "true"
-
-# Обработка OPTIONS запросов для CORS
-RewriteCond %{REQUEST_METHOD} OPTIONS
-RewriteRule ^(.*)$ $1 [R=200,L]
-
-# Если файл или директория существуют, используем их напрямую
+# Если файл или директория существуют физически, используем их
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Все запросы направляем на index.php
+# Перенаправляем все API запросы на api.php
+RewriteCond %{REQUEST_URI} ^/stepik_parser_test/public/api/v1/
+RewriteRule ^api/v1/(.*)$ api.php [QSA,L]
+
+# Перенаправляем запросы к курсам на test_courses.php
+RewriteRule ^courses/?$ test_courses.php [QSA,L]
+RewriteRule ^courses/([0-9]+)/?$ test_courses.php?id=$1 [QSA,L]
+
+# Если нет других совпадений, перенаправляем на index.php
+RewriteCond %{REQUEST_URI} !^/stepik_parser_test/public/api\.php$
 RewriteRule ^(.*)$ index.php [QSA,L] 
