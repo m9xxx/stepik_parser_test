@@ -1301,3 +1301,557 @@ Array
 )
 
 
+2025-05-27 12:28:51 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/api/v1/courses
+    [processed_uri] => /stepik_parser_test/api/v1/courses
+    [uri_parts] => Array
+        (
+            [0] => stepik_parser_test
+            [1] => api
+            [2] => v1
+            [3] => courses
+        )
+
+    [controller] => not found
+    [action] => 
+    [params] => Array
+        (
+        )
+
+    [method] => GET
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_HOST] => localhost
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_SEC_CH_UA] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [HTTP_SEC_FETCH_SITE] => none
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => ::1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => ::1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 54169
+            [REDIRECT_URL] => /stepik_parser_test/api/v1/courses
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/api/v1/courses
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748341731.3228
+            [REQUEST_TIME] => 1748341731
+        )
+
+)
+
+
+2025-05-27 12:29:09 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/api/v1/courses
+    [processed_uri] => /stepik_parser_test/api/v1/courses
+    [uri_parts] => Array
+        (
+            [0] => stepik_parser_test
+            [1] => api
+            [2] => v1
+            [3] => courses
+        )
+
+    [controller] => not found
+    [action] => 
+    [params] => Array
+        (
+        )
+
+    [method] => GET
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_HOST] => localhost
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_SEC_CH_UA] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [HTTP_SEC_FETCH_SITE] => none
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => ::1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => ::1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 54200
+            [REDIRECT_URL] => /stepik_parser_test/api/v1/courses
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/api/v1/courses
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748341749.0137
+            [REQUEST_TIME] => 1748341749
+        )
+
+)
+
+
+2025-05-27 12:29:10 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/public/api/v1/courses
+    [processed_uri] => /api/v1/courses
+    [uri_parts] => Array
+        (
+            [0] => api
+            [1] => v1
+            [2] => courses
+        )
+
+    [controller] => App\Controllers\API\CourseController
+    [action] => index
+    [params] => Array
+        (
+        )
+
+    [method] => GET
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_HOST] => localhost
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_SEC_CH_UA] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [HTTP_SEC_FETCH_SITE] => none
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => ::1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => ::1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 54200
+            [REDIRECT_URL] => /stepik_parser_test/public/api/v1/courses
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/public/api/v1/courses
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748341750.0762
+            [REQUEST_TIME] => 1748341750
+        )
+
+)
+
+
+2025-05-27 12:32:06 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/public/api/v1/courses
+    [processed_uri] => /api/v1/courses
+    [uri_parts] => Array
+        (
+            [0] => api
+            [1] => v1
+            [2] => courses
+        )
+
+    [controller] => App\Controllers\API\CourseController
+    [action] => index
+    [params] => Array
+        (
+        )
+
+    [method] => GET
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_HOST] => localhost
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_SEC_CH_UA] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [HTTP_SEC_FETCH_SITE] => cross-site
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => ::1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => ::1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 54761
+            [REDIRECT_URL] => /stepik_parser_test/public/api/v1/courses
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/public/api/v1/courses
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748341926.8599
+            [REQUEST_TIME] => 1748341926
+        )
+
+)
+
+
+2025-05-27 12:59:13 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/public/api/v1/courses
+    [processed_uri] => /api/v1/courses
+    [uri_parts] => Array
+        (
+            [0] => api
+            [1] => v1
+            [2] => courses
+        )
+
+    [controller] => App\Controllers\API\CourseController
+    [action] => index
+    [params] => Array
+        (
+        )
+
+    [method] => GET
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_HOST] => localhost
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_CACHE_CONTROL] => max-age=0
+            [HTTP_SEC_CH_UA] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [HTTP_SEC_CH_UA_MOBILE] => ?0
+            [HTTP_SEC_CH_UA_PLATFORM] => "Windows"
+            [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+            [HTTP_SEC_FETCH_SITE] => none
+            [HTTP_SEC_FETCH_MODE] => navigate
+            [HTTP_SEC_FETCH_USER] => ?1
+            [HTTP_SEC_FETCH_DEST] => document
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+            [HTTP_ACCEPT_LANGUAGE] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => ::1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => ::1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 57305
+            [REDIRECT_URL] => /stepik_parser_test/public/api/v1/courses
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => GET
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/public/api/v1/courses
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748343553.3463
+            [REQUEST_TIME] => 1748343553
+        )
+
+)
+
+
+2025-05-27 14:14:14 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/public/api/v1/auth/register
+    [processed_uri] => /api/v1/auth/register
+    [uri_parts] => Array
+        (
+            [0] => api
+            [1] => v1
+            [2] => auth
+            [3] => register
+        )
+
+    [controller] => not found
+    [action] => 
+    [params] => Array
+        (
+        )
+
+    [method] => POST
+    [server] => Array
+        (
+            [REDIRECT_MIBDIRS] => C:/xampp/php/extras/mibs
+            [REDIRECT_MYSQL_HOME] => \xampp\mysql\bin
+            [REDIRECT_OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [REDIRECT_PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [REDIRECT_PHPRC] => \xampp\php
+            [REDIRECT_TMP] => \xampp\tmp
+            [REDIRECT_STATUS] => 200
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [CONTENT_TYPE] => application/json
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT; Windows NT 10.0; ru-RU) WindowsPowerShell/5.1.26100.4061
+            [HTTP_HOST] => localhost
+            [CONTENT_LENGTH] => 75
+            [HTTP_EXPECT] => 100-continue
+            [HTTP_CONNECTION] => Keep-Alive
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => 127.0.0.1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => 127.0.0.1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 64551
+            [REDIRECT_URL] => /stepik_parser_test/public/api/v1/auth/register
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => POST
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/public/api/v1/auth/register
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PHP_SELF] => /stepik_parser_test/public/api.php
+            [REQUEST_TIME_FLOAT] => 1748348054.735
+            [REQUEST_TIME] => 1748348054
+        )
+
+)
+
+
+2025-05-27 15:31:54 - Debug Info:
+Array
+(
+    [request_uri] => /stepik_parser_test/public/api.php/import
+    [processed_uri] => /api.php/import
+    [uri_parts] => Array
+        (
+            [0] => api.php
+            [1] => import
+        )
+
+    [controller] => not found
+    [action] => 
+    [params] => Array
+        (
+        )
+
+    [method] => POST
+    [server] => Array
+        (
+            [MIBDIRS] => C:/xampp/php/extras/mibs
+            [MYSQL_HOME] => \xampp\mysql\bin
+            [OPENSSL_CONF] => C:/xampp/apache/bin/openssl.cnf
+            [PHP_PEAR_SYSCONF_DIR] => \xampp\php
+            [PHPRC] => \xampp\php
+            [TMP] => \xampp\tmp
+            [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT; Windows NT 10.0; ru-RU) WindowsPowerShell/5.1.26100.4061
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [HTTP_HOST] => localhost
+            [CONTENT_LENGTH] => 0
+            [HTTP_CONNECTION] => Keep-Alive
+            [PATH] => C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\php-8.3.8;C:\Program Files\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Automiq\Alpha.Alarms\;C:\Program Files (x86)\Touch Portal\plugins\adb\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\WireGuard\;C:\ffmpeg-2025-03-10-git-87e5da9067-full_build\bin;C:\Program Files\Git\cmd;C:\Users\M9X\AppData\Local\Programs\Python\Python39;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts;;z:\cursor\resources\app\bin;C:\OSPanel\bin;C:\Users\M9X\dev\flutter\bin;C:\Users\M9X\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\M9X\AppData\Local\Programs\Python\Python39\;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\mingw64\bin;C:\Users\M9X\AppData\Local\GitHubDesktop\bin;C:\Users\M9X\AppData\Local\gitkraken\bin;C:\Users\M9X\AppData\Local\Microsoft\WindowsApps;C:\Users\M9X\AppData\Roaming\npm;C:\Users\M9X\AppData\Roaming\Composer\vendor\bin;C:\dart-sdk\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\apache-maven-3.9.9\bin;C:\Users\M9X\Desktop\Sem_7\Тестирование ПО\Web;C:\Users\M9X\AppData\Local\Muse Hub\lib;C:\Users\M9X\.dotnet\tools;C:\Users\M9X\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.5\bin;;Z:\cursor\resources\app\bin
+            [SystemRoot] => C:\WINDOWS
+            [COMSPEC] => C:\WINDOWS\system32\cmd.exe
+            [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+            [WINDIR] => C:\WINDOWS
+            [SERVER_SIGNATURE] => <address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30 Server at localhost Port 80</address>
+
+            [SERVER_SOFTWARE] => Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.0.30
+            [SERVER_NAME] => localhost
+            [SERVER_ADDR] => 127.0.0.1
+            [SERVER_PORT] => 80
+            [REMOTE_ADDR] => 127.0.0.1
+            [DOCUMENT_ROOT] => C:/xampp/htdocs
+            [REQUEST_SCHEME] => http
+            [CONTEXT_PREFIX] => 
+            [CONTEXT_DOCUMENT_ROOT] => C:/xampp/htdocs
+            [SERVER_ADMIN] => postmaster@localhost
+            [SCRIPT_FILENAME] => C:/xampp/htdocs/stepik_parser_test/public/api.php
+            [REMOTE_PORT] => 57203
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [REQUEST_METHOD] => POST
+            [QUERY_STRING] => 
+            [REQUEST_URI] => /stepik_parser_test/public/api.php/import
+            [SCRIPT_NAME] => /stepik_parser_test/public/api.php
+            [PATH_INFO] => /import
+            [PATH_TRANSLATED] => C:\xampp\htdocs\import
+            [PHP_SELF] => /stepik_parser_test/public/api.php/import
+            [REQUEST_TIME_FLOAT] => 1748352714.4884
+            [REQUEST_TIME] => 1748352714
+        )
+
+)
+
+

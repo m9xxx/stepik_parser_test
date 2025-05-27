@@ -8,60 +8,36 @@ try {
     $db = \App\Models\Database::getInstance();
     $connection = $db->getConnection();
     
-    // Проверяем, запрошен ли конкретный курс
-    $courseId = isset($_GET['id']) ? (int)$_GET['id'] : null;
+    // Получаем количество курсов по платформам
+    $stmt = $connection->query("
+        SELECT platform_id, COUNT(*) as count 
+        FROM courses 
+        GROUP BY platform_id
+    ");
+    $courseCounts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    if ($courseId) {
-        // Получаем информацию о конкретном курсе
-        $stmt = $connection->prepare("
-            SELECT c.*, p.name as platform_name 
-            FROM courses c
-            JOIN platforms p ON c.platform_id = p.id
-            WHERE c.id = ?
-        ");
-        $stmt->execute([$courseId]);
-        $course = $stmt->fetch(PDO::FETCH_ASSOC);
-        
-        if ($course) {
-            echo json_encode([
-                'success' => true,
-                'message' => 'Информация о курсе',
-                'data' => $course
-            ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-        } else {
-            http_response_code(404);
-            echo json_encode([
-                'success' => false,
-                'message' => 'Курс не найден'
-            ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    // Получаем названия платформ
+    $stmt = $connection->query("SELECT * FROM platforms");
+    $platforms = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    // Формируем статистику
+    $statistics = [];
+    foreach ($platforms as $platform) {
+        $count = 0;
+        foreach ($courseCounts as $courseCount) {
+            if ($courseCount['platform_id'] == $platform['id']) {
+                $count = $courseCount['count'];
+                break;
+            }
         }
-    } else {
-        // Получаем количество курсов по платформам
-        $stmt = $connection->query("
-            SELECT p.name as platform_name, COUNT(*) as count 
-            FROM courses c
-            JOIN platforms p ON c.platform_id = p.id
-            GROUP BY p.name
-        ");
-        $statistics = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
-        
-        // Получаем список всех курсов
-        $stmt = $connection->query("
-            SELECT c.*, p.name as platform_name 
-            FROM courses c
-            JOIN platforms p ON c.platform_id = p.id
-            ORDER BY c.id DESC
-            LIMIT 10
-        ");
-        $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        
-        echo json_encode([
-            'success' => true,
-            'message' => 'Статистика и список последних курсов',
-            'statistics' => $statistics,
-            'courses' => $courses
-        ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        $statistics[$platform['name']] = $count;
     }
+    
+    echo json_encode([
+        'success' => true,
+        'message' => 'Статистика по курсам',
+        'statistics' => $statistics
+    ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     
 } catch (Exception $e) {
     http_response_code(500);
