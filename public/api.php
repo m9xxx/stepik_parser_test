@@ -1,6 +1,17 @@
 <?php
 // public/api.php
 
+// Логируем детали запроса
+$requestData = [
+    'time' => date('Y-m-d H:i:s'),
+    'method' => $_SERVER['REQUEST_METHOD'],
+    'uri' => $_SERVER['REQUEST_URI'],
+    'headers' => getallheaders(),
+    'raw_input' => file_get_contents('php://input')
+];
+
+file_put_contents(__DIR__ . '/debug_request.txt', print_r($requestData, true) . "\n\n", FILE_APPEND);
+
 // Включаем отображение ошибок для отладки
 error_reporting(E_ALL);
 ini_set('display_errors', 1); // Временно включаем отображение ошибок для отладки
@@ -20,14 +31,17 @@ file_put_contents(__DIR__ . '/../logs/api_requests.log',
 
 // Включаем заголовки для CORS
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+header("Access-Control-Max-Age: 3600");
 
-// Если это запрос OPTIONS, отвечаем только заголовками и завершаем работу
+// Если это предварительный запрос OPTIONS
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    header("HTTP/1.1 200 OK");
     exit(0);
 }
+
+header("Content-Type: application/json; charset=UTF-8");
 
 try {
     // Подключаем автозагрузчики
@@ -99,6 +113,28 @@ try {
         $controller = new \App\Controllers\API\CourseController();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $action = 'importCourses';
+        }
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'auth') {
+        $controller = new \App\Controllers\API\AuthController();
+        
+        if ($uriParts[3] === 'register' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            $action = 'register';
+        } elseif ($uriParts[3] === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            $action = 'login';
+        }
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'favorites') {
+        require_once __DIR__ . '/../app/Controllers/API/FavoriteController.php';
+        $controller = new \App\Controllers\API\FavoriteController();
+    
+        if (count($uriParts) === 3 && $_SERVER['REQUEST_METHOD'] === 'GET') {
+            // GET /api/v1/favorites?user_id=...
+            $action = 'list';
+        } elseif (count($uriParts) === 4 && $uriParts[3] === 'add' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            // POST /api/v1/favorites/add
+            $action = 'add';
+        } elseif (count($uriParts) === 4 && $uriParts[3] === 'remove' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+            // POST /api/v1/favorites/remove
+            $action = 'remove';
         }
     }
     

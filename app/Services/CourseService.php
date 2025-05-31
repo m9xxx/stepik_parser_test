@@ -46,10 +46,17 @@ class CourseService {
         }
         
         if (!empty($filters['source'])) {
-            $platform = Platform::findByName($filters['source']);
-            if ($platform) {
-                $searchFilters['platform_id'] = $platform->getId();
-                $searchFilters['limit'] = 1000; // Увеличиваем лимит для получения всех курсов платформы
+            $sources = is_array($filters['source']) ? $filters['source'] : [$filters['source']];
+            $platformIds = [];
+            foreach ($sources as $src) {
+                $platform = Platform::findByName($src);
+                if ($platform) {
+                    $platformIds[] = $platform->getId();
+                }
+            }
+            if ($platformIds) {
+                $searchFilters['platform_id'] = $platformIds;
+                $searchFilters['limit'] = 1000;
             }
         }
         

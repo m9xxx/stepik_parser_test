@@ -1,0 +1,1560 @@
+Array
+(
+    [time] => 2025-05-30 17:41:24
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => GET
+            [Access-Control-Request-Headers] => x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:41:24
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:07
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => GET
+            [Access-Control-Request-Headers] => x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:07
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:39
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type,x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:39
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:39
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:42
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:42
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":488}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:54:59
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":453}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 17:55:11
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":453}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:27:46
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:28:21
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":462}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:30:28
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:30:28
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:30:28
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:31:12
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":485}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:31:24
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:31:24
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:31:24
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:05
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type,x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:05
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:06
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => GET
+            [Access-Control-Request-Headers] => x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:06
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:06
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:12
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-30 18:33:12
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 29
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":1,"course_id":447}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:47:59
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type,x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:47:59
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:00
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:00
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => GET
+            [Access-Control-Request-Headers] => x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:00
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:04
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:19
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:48:36
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 53
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"k2002mv@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:15
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/auth/register
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type,x-requested-with
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:15
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/register
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 67
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"username":"KutKut","email":"kut@mail.ru","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:15
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:15
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=12
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:18
+    [method] => OPTIONS
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Accept] => */*
+            [Access-Control-Request-Method] => POST
+            [Access-Control-Request-Headers] => content-type
+            [Origin] => http://127.0.0.1:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:18
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 32
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":"12","course_id":488}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:45
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/favorites/add
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [Content-Length] => 32
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"user_id":"12","course_id":453}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:48
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 47
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"kut@mail.ru","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:48
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:48
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=12
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:52
+    [method] => POST
+    [uri] => /stepik_parser_test/public/api/v1/auth/login
+    [headers] => Array
+        (
+            [Host] => 127.0.0.1
+            [Connection] => keep-alive
+            [Content-Length] => 52
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [Content-Type] => application/json
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => same-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => {"email":"m9xeng@gmail.com","password":"haskie1337"}
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:52
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:49:52
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 10:58:58
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:05:39
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:05:52
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:05:52
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:05:58
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:06:12
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/courses
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [X-Requested-With] => XMLHttpRequest
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [Accept] => application/json
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:06:12
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+
+Array
+(
+    [time] => 2025-05-31 11:06:24
+    [method] => GET
+    [uri] => /stepik_parser_test/public/api/v1/favorites?user_id=1
+    [headers] => Array
+        (
+            [Host] => localhost
+            [Connection] => keep-alive
+            [sec-ch-ua-platform] => "Windows"
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+            [sec-ch-ua] => "Chromium";v="136", "Google Chrome";v="136", "Not.A/Brand";v="99"
+            [sec-ch-ua-mobile] => ?0
+            [Accept] => */*
+            [Origin] => http://127.0.0.1:8000
+            [Sec-Fetch-Site] => cross-site
+            [Sec-Fetch-Mode] => cors
+            [Sec-Fetch-Dest] => empty
+            [Referer] => http://127.0.0.1:8000/
+            [Accept-Encoding] => gzip, deflate, br, zstd
+            [Accept-Language] => ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+        )
+
+    [raw_input] => 
+)
+
+

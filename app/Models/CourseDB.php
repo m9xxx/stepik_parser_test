@@ -82,8 +82,14 @@ class CourseDB extends Course
         $params = [];
 
         if (!empty($filters['platform_id'])) {
-            $where[] = 'c.platform_id = ?';
-            $params[] = $filters['platform_id'];
+            if (is_array($filters['platform_id'])) {
+                $in = implode(',', array_fill(0, count($filters['platform_id']), '?'));
+                $where[] = "c.platform_id IN ($in)";
+                $params = array_merge($params, $filters['platform_id']);
+            } else {
+                $where[] = 'c.platform_id = ?';
+                $params[] = $filters['platform_id'];
+            }
         }
 
         if (!empty($filters['search'])) {

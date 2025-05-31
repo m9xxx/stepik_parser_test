@@ -56,12 +56,12 @@ if (strpos($_SERVER['REQUEST_URI'], '/api/v1/') === 0) {
         
         <h2>Доступные API-эндпоинты:</h2>
         <ul>
-            <li><a href="/api/v1/courses">/api/v1/courses</a> - получить все курсы</li>
-            <li><a href="/api/v1/courses/search?q=python">/api/v1/courses/search?q=python</a> - поиск курсов по запросу</li>
-            <li><a href="/api/v1/parsers/statistics">/api/v1/parsers/statistics</a> - статистика парсеров</li>
+            <li><a href="/stepik_parser_test/public/api/v1/courses">/api/v1/courses</a> - получить все курсы</li>
+            <li><a href="/stepik_parser_test/public/api/v1/courses/search?q=python">/api/v1/courses/search?q=python</a> - поиск курсов по запросу</li>
+            <li><a href="/stepik_parser_test/public/api/v1/parsers/statistics">/api/v1/parsers/statistics</a> - статистика парсеров</li>
         </ul>
         
-        <p>Для удобного тестирования API используйте: <a href="/test_api.html">Тестовый интерфейс</a></p>
+        <p>Для тестирования авторизации используйте: <a href="/stepik_parser_test/public/test_auth.html">Тест авторизации</a></p>
     </div>
 </body>
 </html>

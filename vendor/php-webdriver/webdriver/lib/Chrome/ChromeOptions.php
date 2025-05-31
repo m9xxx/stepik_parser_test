@@ -1,30 +1,37 @@
 <?php
+// Copyright 2004-present Facebook. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 
 namespace Facebook\WebDriver\Chrome;
 
 use Facebook\WebDriver\Remote\DesiredCapabilities;
-use JsonSerializable;
-use ReturnTypeWillChange;
 
 /**
  * The class manages the capabilities in ChromeDriver.
  *
  * @see https://sites.google.com/a/chromium.org/chromedriver/capabilities
  */
-class ChromeOptions implements JsonSerializable
+class ChromeOptions
 {
     /**
-     * The key of chromeOptions in desired capabilities
+     * The key of chrome options in desired capabilities.
      */
-    public const CAPABILITY = 'goog:chromeOptions';
-    /**
-     * @deprecated Use CAPABILITY instead
-     */
-    public const CAPABILITY_W3C = self::CAPABILITY;
+    const CAPABILITY = 'chromeOptions';
     /**
      * @var array
      */
-    private $arguments = [];
+    private $arguments = array();
     /**
      * @var string
      */
@@ -32,22 +39,11 @@ class ChromeOptions implements JsonSerializable
     /**
      * @var array
      */
-    private $extensions = [];
+    private $extensions = array();
     /**
      * @var array
      */
-    private $experimentalOptions = [];
-
-    /**
-     * Return a version of the class which can JSON serialized.
-     *
-     * @return array
-     */
-    #[ReturnTypeWillChange]
-    public function jsonSerialize()
-    {
-        return $this->toArray();
-    }
+    private $experimentalOptions = array();
 
     /**
      * Sets the path of the Chrome executable. The path should be either absolute
@@ -64,6 +60,7 @@ class ChromeOptions implements JsonSerializable
     }
 
     /**
+     * @param array $arguments
      * @return ChromeOptions
      */
     public function addArguments(array $arguments)
@@ -77,6 +74,7 @@ class ChromeOptions implements JsonSerializable
      * Add a Chrome extension to install on browser startup. Each path should be
      * a packed Chrome extension.
      *
+     * @param array $paths
      * @return ChromeOptions
      */
     public function addExtensions(array $paths)
@@ -104,9 +102,6 @@ class ChromeOptions implements JsonSerializable
     /**
      * Sets an experimental option which has not exposed officially.
      *
-     * When using "prefs" to set Chrome preferences, please be aware they are so far not supported by
-     * Chrome running in headless mode, see https://bugs.chromium.org/p/chromium/issues/detail?id=775911
-     *
      * @param string $name
      * @param mixed $value
      * @return ChromeOptions
@@ -130,25 +125,23 @@ class ChromeOptions implements JsonSerializable
     }
 
     /**
-     * @return \ArrayObject|array
+     * @return array
      */
     public function toArray()
     {
+        $options = $this->experimentalOptions;
+
         // The selenium server expects a 'dictionary' instead of a 'list' when
         // reading the chrome option. However, an empty array in PHP will be
-        // converted to a 'list' instead of a 'dictionary'. To fix it, we work
-        // with `ArrayObject`
-        $options = new \ArrayObject($this->experimentalOptions);
+        // converted to a 'list' instead of a 'dictionary'. To fix it, we always
+        // set the 'binary' to avoid returning an empty array.
+        $options['binary'] = $this->binary;
 
-        if (!empty($this->binary)) {
-            $options['binary'] = $this->binary;
-        }
-
-        if (!empty($this->arguments)) {
+        if ($this->arguments) {
             $options['args'] = $this->arguments;
         }
 
-        if (!empty($this->extensions)) {
+        if ($this->extensions) {
             $options['extensions'] = $this->extensions;
         }
 

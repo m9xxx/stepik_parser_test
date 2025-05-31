@@ -20,7 +20,11 @@ class CourseController {
         $filters = [];
         
         if ($source) {
-            $filters['source'] = $source;
+            if (is_array($source)) {
+                $filters['source'] = $source;
+            } else {
+                $filters['source'] = explode(',', $source);
+            }
         }
         
         $courses = $this->courseService->searchCourses('', $filters);

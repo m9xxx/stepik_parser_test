@@ -1,5 +1,7 @@
 <?php
 require 'vendor/autoload.php';
+require_once dirname(__DIR__) . '/app/Models/CourseDB.php';
+require_once dirname(__DIR__) . '/app/Models/Platform.php';
 
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
@@ -30,16 +32,16 @@ $skippedStub = 0;
 $skippedError = 0;
 
 // Чтение существующих данных
-$existingData = [];
-if (file_exists($dataFile)) {
-    $existingData = json_decode(file_get_contents($dataFile), true) ?: [];
-}
+// $existingData = [];
+// if (file_exists($dataFile)) {
+//     $existingData = json_decode(file_get_contents($dataFile), true) ?: [];
+// }
 
 // Создаем индекс существующих ID для быстрого поиска
-$existingIds = [];
-foreach ($existingData as $course) {
-    $existingIds[$course['id']] = true;
-}
+// $existingIds = [];
+// foreach ($existingData as $course) {
+//     $existingIds[$course['id']] = true;
+// }
 
 function isStubCourse($title, $description, $rating) {
     global $typical_stub_description, $typical_stub_title;
@@ -443,29 +445,22 @@ function extractCoursePrice($html, $debug = false) {
     return $price;
 }
 
-// Функция для обновления файла с данными
-function saveNewCourse($dataFile, &$existingData, &$existingIds, $newCourse) {
-    // Добавляем новый курс в массив
-    $existingData[] = $newCourse;
-    // Обновляем индекс ID
-    $existingIds[$newCourse['id']] = true;
-    
-    // Сохраняем обновленные данные в файл
-    file_put_contents(
-        $dataFile,
-        json_encode($existingData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)
-    );
-    
-    return true;
-}
-
 // Основной цикл обработки
 for ($i = 1566; $i <= 116340; $i++) {
     $processed++;
     $courseUrl = "https://stepik.org/course/{$i}/promo";
     
-    // Проверяем, не обрабатывали ли мы уже этот курс
-    if (isset($existingIds[$i])) {
+    // Проверяем, не обрабатывали ли мы уже этот курс (по базе)
+    $platform = \App\Models\Platform::findByName('stepik');
+    if (!$platform) {
+        echo "Платформа stepik не найдена в базе.\n";
+        break;
+    }
+    $existing = \App\Models\CourseDB::search([
+        'platform_id' => $platform->getId(),
+        'external_id' => $i
+    ]);
+    if (!empty($existing)) {
         echo "Курс с ID {$i} уже есть в базе, пропускаем.\n";
         echo "------------------------\n";
         $skipped++;
@@ -566,11 +561,14 @@ for ($i = 1566; $i <= 116340; $i++) {
                 'parsed_at' => date('Y-m-d H:i:s')
             ];
     
-            // Сразу сохраняем новый курс в файл
-            saveNewCourse($dataFile, $existingData, $existingIds, $course_data);
+            // Сохраняем курс в БД
+            $courseDB = new \App\Models\CourseDB($course_data, 'stepik');
+            $courseDB->setPlatformId($platform->getId());
+            $courseDB->setParsedAt($course_data['parsed_at']);
+            $courseDB->save();
             $added++;
     
-            echo "ID курса: {$i} - данные добавлены и сохранены\n";
+            echo "ID курса: {$i} - данные добавлены в БД\n";
             echo "  Название: {$title}\n";
             echo "  Рейтинг: {$rating} (отзывов: {$reviewCount})\n";
             echo "  Цена: {$price}\n";
@@ -615,4 +613,3 @@ echo "Пропущено (всего): {$skipped}\n";
 echo "Пропущено завершившихся курсов: {$skippedEnded}\n";
 echo "Пропущено заглушек: {$skippedStub}\n";
 echo "Пропущено из-за ошибок: {$skippedError}\n";
-echo "Всего курсов в файле: " . count($existingData) . "\n";

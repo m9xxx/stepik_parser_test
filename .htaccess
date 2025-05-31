@@ -1,19 +1,28 @@
 # Отключаем проверку версии PHP
 php_value display_startup_errors 0
 
-# Перенаправляем все API запросы на api.php в public директории
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^api/v1/(.*)$ public/api.php [QSA,L]
+RewriteBase /stepik_parser_test/public/
 
-# Правило для прямого доступа к api.php
-RewriteRule ^public/api\.php(.*)$ public/api.php$1 [QSA,L]
+# Если запрос к существующему файлу или директории, не делаем ничего
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Включаем CORS заголовки
-Header always set Access-Control-Allow-Origin "*"
-Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE, PUT"
-Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+# Если запрос начинается с /api/, перенаправляем на api.php
+RewriteRule ^api/ api.php [QSA,L]
+
+# Если запрос к статическому файлу (html, css, js, etc), обрабатываем напрямую
+RewriteCond %{REQUEST_URI} \.(html|css|js|png|jpg|jpeg|gif|ico)$ [NC]
+RewriteRule ^ - [L]
+
+# Для всех остальных запросов перенаправляем на index.php
+RewriteRule ^ index.php [QSA,L]
+
+# Разрешаем CORS
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 
 # Обработка OPTIONS запросов
 RewriteCond %{REQUEST_METHOD} OPTIONS

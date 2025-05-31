@@ -1,18 +1,36 @@
+# Включаем движок перезаписи
 RewriteEngine On
+
+# Базовый путь
 RewriteBase /stepik_parser_test/public/
 
-# Если файл или директория существуют физически, используем их
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+# Если файл существует, обрабатываем его напрямую
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
 
-# Перенаправляем все API запросы на api.php
-RewriteCond %{REQUEST_URI} ^/stepik_parser_test/public/api/v1/
-RewriteRule ^api/v1/(.*)$ api.php [QSA,L]
+# Если директория существует, обрабатываем её напрямую
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-# Перенаправляем запросы к курсам на test_courses.php
-RewriteRule ^courses/?$ test_courses.php [QSA,L]
-RewriteRule ^courses/([0-9]+)/?$ test_courses.php?id=$1 [QSA,L]
+# Если запрос к API, перенаправляем на api.php
+RewriteRule ^api/ api.php [QSA,L]
 
-# Если нет других совпадений, перенаправляем на index.php
-RewriteCond %{REQUEST_URI} !^/stepik_parser_test/public/api\.php$
-RewriteRule ^(.*)$ index.php [QSA,L] 
+# Для всех остальных запросов перенаправляем на index.php
+RewriteRule ^ index.php [QSA,L]
+
+# Разрешаем CORS
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+
+# Обработка OPTIONS запросов
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+# Явно указываем типы файлов
+AddType text/html .html
+AddType text/css .css
+AddType application/javascript .js
+AddType image/png .png
+AddType image/jpeg .jpg .jpeg
+AddType image/gif .gif 
