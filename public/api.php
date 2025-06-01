@@ -7,7 +7,9 @@ $requestData = [
     'method' => $_SERVER['REQUEST_METHOD'],
     'uri' => $_SERVER['REQUEST_URI'],
     'headers' => getallheaders(),
-    'raw_input' => file_get_contents('php://input')
+    'raw_input' => file_get_contents('php://input'),
+    'post_data' => $_POST,
+    'json_data' => json_decode(file_get_contents('php://input'), true)
 ];
 
 file_put_contents(__DIR__ . '/debug_request.txt', print_r($requestData, true) . "\n\n", FILE_APPEND);
@@ -96,6 +98,10 @@ try {
             $action = 'show';
             $params[] = $uriParts[3];
         }
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'platforms') {
+        // GET /api/v1/platforms - Получение списка платформ
+        $controller = new \App\Controllers\API\PlatformController();
+        $action = 'index';
     } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'parsers') {
         $controller = new \App\Controllers\API\CourseController();
         
@@ -135,6 +141,17 @@ try {
         } elseif (count($uriParts) === 4 && $uriParts[3] === 'remove' && $_SERVER['REQUEST_METHOD'] === 'POST') {
             // POST /api/v1/favorites/remove
             $action = 'remove';
+        }
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'user') {
+        require_once __DIR__ . '/../app/Controllers/API/UserController.php';
+        $controller = new \App\Controllers\API\UserController();
+        
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if ($uriParts[3] === 'profile') {
+                $action = 'updateProfile';
+            } elseif ($uriParts[3] === 'password') {
+                $action = 'updatePassword';
+            }
         }
     }
     

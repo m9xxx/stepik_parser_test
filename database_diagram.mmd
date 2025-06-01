@@ -1,0 +1,79 @@
+erDiagram
+    Course {
+        int id PK
+        int platform_id FK
+        string external_id
+        string title
+        string description
+        float rating
+        int review_count
+        float price
+        string url
+        timestamp parsed_at
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    User {
+        int id PK
+        string username
+        string email
+        string password_hash
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    Platform {
+        int id PK
+        string name
+        string url
+        timestamp created_at
+    }
+
+    UserFavorite {
+        int id PK
+        int user_id FK
+        int course_id FK
+        timestamp created_at
+    }
+
+    Playlist {
+        int id PK
+        int user_id FK
+        string name
+        string description
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    PlaylistCourse {
+        int playlist_id FK
+        int course_id FK
+        int position
+        timestamp created_at
+    }
+
+    Session {
+        string id PK
+        int user_id FK
+        string data
+        timestamp created_at
+        timestamp updated_at
+    }
+
+    CourseAggregator {
+        int id PK
+        int course_id FK
+        string source
+        json metadata
+        timestamp aggregated_at
+    }
+
+    User ||--o{ UserFavorite : "has"
+    User ||--o{ Playlist : "owns"
+    User ||--o{ Session : "has"
+    Course ||--o{ UserFavorite : "is in"
+    Course ||--o{ PlaylistCourse : "included in"
+    Platform ||--o{ Course : "provides"
+    Playlist ||--o{ PlaylistCourse : "contains"
+    Course ||--o{ CourseAggregator : "aggregated in" 

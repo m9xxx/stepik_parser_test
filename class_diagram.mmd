@@ -1,0 +1,168 @@
+---
+config:
+  theme: default
+---
+classDiagram
+    class CourseController {
+        -CourseService courseService
+        -ParserService parserService
+        +index()
+        +show(id)
+        +showBySourceAndId(source, id)
+        +search()
+        +importCourses()
+        +runParser(parser)
+        +runAllParsers()
+        +getParserStatistics()
+        -jsonResponse(data, statusCode)
+    }
+    class AuthController {
+        +login()
+        +register()
+    }
+    class FavoriteController {
+        +add()
+        +remove()
+        +list()
+    }
+    class PlatformController {
+        -db: Database
+        +__construct()
+        +index()
+    }
+    class CourseService {
+        -jsonDataReader: JsonDataReader
+        +__construct(JsonDataReader)
+        +getAllCourses()
+        +getCourseById(id, source)
+        +searchCourses(query, filters)
+        +importCoursesFromJson()
+        -importFromSource(sourceName)
+        -getPlatformUrl(sourceName)
+        +getAllCoursesFromJson()
+    }
+    class ParserService {
+        -availableParsers: array
+        +runAllParsers()
+        +runSpecificParser(parserName)
+        +getParserStatistics()
+        -getLastModifiedTime(parserName)
+    }
+    class Course {
+        -id: int
+        -title: string
+        -description: string
+        -rating: float
+        -url: string
+        -source: string
+        -additionalData: array
+        +__construct(data, source)
+        +toArray()
+        +getId()
+        +getTitle()
+        +getDescription()
+        +getRating()
+        +getUrl()
+        +getSource()
+        +getPrice()
+        +getCurrency()
+        +getReviewsCount()
+        +getFullDescription()
+    }
+    class CourseDB {
+        -platformId: int
+        -externalId: string
+        -parsedAt: timestamp
+        +__construct(data, source)
+        +save()
+        +findById(id)
+        +search(filters)
+        +getPlatformId()
+        +getExternalId()
+        +getParsedAt()
+        +getCreatedAt()
+        +getUpdatedAt()
+        +setPlatformId(platformId)
+        +setParsedAt(parsedAt)
+    }
+    class User {
+        -id: int
+        -username: string
+        -email: string
+        -passwordHash: string
+        -createdAt: timestamp
+        -updatedAt: timestamp
+        +__construct(data)
+        +save()
+        +findById(id)
+        +findByUsername(username)
+        +authenticate(password)
+        +setPassword(password)
+        +toArray()
+        +getId()
+        +getUsername()
+        +getEmail()
+        +getCreatedAt()
+        +getUpdatedAt()
+        +setUsername(username)
+        +setEmail(email)
+    }
+    class Platform {
+        -id: int
+        -name: string
+        -url: string
+        -createdAt: timestamp
+        +__construct(data)
+        +save()
+        +findById(id)
+        +findByName(name)
+        +getAll()
+        +toArray()
+        +getId()
+        +getName()
+        +getUrl()
+        +getCreatedAt()
+        +setName(name)
+        +setUrl(url)
+    }
+    class Favorite {
+        -id: int
+        -userId: int
+        -courseId: int
+        -createdAt: timestamp
+        +__construct(data)
+        +save()
+        +delete()
+        +findByUserAndCourse(userId, courseId)
+        +getUserFavorites(userId)
+        +isFavorite(userId, courseId)
+        +toArray()
+        +getId()
+        +getUserId()
+        +getCourseId()
+        +getCreatedAt()
+        +setUserId(userId)
+        +setCourseId(courseId)
+    }
+    class Database {
+        -instance: Database
+        -pdo: PDO
+        -__construct()
+        -createTablesIfNotExist()
+        +getInstance()
+        +getConnection()
+    }
+    CourseController --> CourseService
+    CourseController --> ParserService
+    AuthController --> User
+    FavoriteController --> Favorite
+    PlatformController --> Platform
+    CourseService --> Course
+    CourseService --> CourseDB
+    CourseService --> Database
+    ParserService --> Course
+    Course <|-- CourseDB
+    CourseDB --> Database
+    User --> Database
+    Platform --> Database
+    Favorite --> Database

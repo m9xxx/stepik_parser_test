@@ -76,7 +76,7 @@ class CourseController {
 
     // Поиск курсов
     public function search() {
-        $query = $_GET['q'] ?? '';
+        $query = $_GET['search'] ?? '';
         $filters = [
             'source' => $_GET['source'] ?? null,
             'rating' => $_GET['rating'] ?? null
