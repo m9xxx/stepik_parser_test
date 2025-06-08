@@ -13,15 +13,20 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
 # Если запрос к API, перенаправляем на api.php
-RewriteRule ^api/ api.php [QSA,L]
+RewriteCond %{REQUEST_URI} ^/stepik_parser_test/public/api/v1/
+RewriteRule ^api/v1/(.*)$ api.php [L]
 
 # Для всех остальных запросов перенаправляем на index.php
-RewriteRule ^ index.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
 
 # Разрешаем CORS
-Header set Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
-Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+Header set Access-Control-Allow-Origin "http://127.0.0.1:8000"
+Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, X-CSRF-TOKEN"
+Header set Access-Control-Allow-Credentials "true"
+Header set Access-Control-Max-Age "3600"
 
 # Обработка OPTIONS запросов
 RewriteCond %{REQUEST_METHOD} OPTIONS

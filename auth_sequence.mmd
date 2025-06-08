@@ -1,0 +1,58 @@
+sequenceDiagram
+    participant Frontend
+    participant API as API (api.php)
+    participant AC as AuthController
+    participant User as User Model
+    participant DB as Database
+    
+    %% Успешный вход
+    Frontend->>API: POST /api/v1/auth/login
+    Note over Frontend,API: {email, password}
+    activate API
+    API->>AC: login()
+    activate AC
+    
+    %% Валидация входных данных
+    AC->>AC: Validate input
+    
+    alt Missing fields
+        AC-->>API: Error: Не все поля заполнены
+        API-->>Frontend: 400 Bad Request
+    else Has all fields
+        AC->>User: findByUsername(email)
+        activate User
+        User->>DB: SELECT query
+        activate DB
+        Note over DB: SELECT * FROM users WHERE username = email
+        DB-->>User: user data (including password hash)
+        deactivate DB
+        Note over User: Create User object with DB data
+        User-->>AC: User object
+        deactivate User
+        
+        alt User not found
+            AC-->>API: Error: Пользователь не найден
+            API-->>Frontend: 400 Bad Request
+        else User exists
+            AC->>User: authenticate(password)
+            activate User
+            Note over User: Compare password hash\nwith stored hash\n(no DB query needed)
+            
+            alt Invalid password
+                User-->>AC: false
+                AC-->>API: Error: Неверный пароль
+                API-->>Frontend: 400 Bad Request
+            else Valid password
+                User-->>AC: true
+                AC->>User: toArray()
+                Note over User: Convert object data to array\n(using already loaded data)
+                User-->>AC: user data
+                AC-->>API: Success + user data
+                API-->>Frontend: 200 OK + user data
+            end
+            deactivate User
+        end
+    end
+    
+    deactivate AC
+    deactivate API 

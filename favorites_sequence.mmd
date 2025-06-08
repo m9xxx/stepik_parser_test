@@ -1,0 +1,95 @@
+sequenceDiagram
+    participant Frontend
+    participant API as API (api.php)
+    participant FC as FavoriteController
+    participant Favorite as Favorite Model
+    participant DB as Database
+    
+    %% Добавление в избранное
+    Frontend->>API: POST /api/v1/favorites/add
+    Note over Frontend,API: {user_id, course_id}
+    activate API
+    API->>FC: add()
+    activate FC
+    
+    %% Валидация входных данных
+    FC->>FC: Validate input
+    
+    alt Missing fields
+        FC-->>API: Error: user_id and course_id required
+        API-->>Frontend: 400 Bad Request
+    else Has all fields
+        FC->>Favorite: new Favorite()
+        activate Favorite
+        Note over Favorite: Initialize with user_id and course_id
+        
+        Favorite->>DB: INSERT IGNORE INTO user_favorites
+        activate DB
+        
+        alt Duplicate entry
+            DB-->>Favorite: No changes (already exists)
+            Favorite-->>FC: true (no error)
+            FC-->>API: Success
+            API-->>Frontend: 200 OK
+        else New entry
+            DB-->>Favorite: Insert success
+            deactivate DB
+            Favorite-->>FC: true
+            FC-->>API: Success
+            API-->>Frontend: 200 OK
+        else Database error
+            DB-->>Favorite: Error
+            deactivate DB
+            Favorite-->>FC: false
+            FC-->>API: Error: Failed to add to favorites
+            API-->>Frontend: 500 Internal Server Error
+        end
+        
+        deactivate Favorite
+    end
+    
+    deactivate FC
+    deactivate API
+
+    %% Удаление из избранного
+    Frontend->>API: POST /api/v1/favorites/remove
+    Note over Frontend,API: {user_id, course_id}
+    activate API
+    API->>FC: remove()
+    activate FC
+    
+    FC->>FC: Validate input
+    
+    alt Missing fields
+        FC-->>API: Error: user_id and course_id required
+        API-->>Frontend: 400 Bad Request
+    else Has all fields
+        FC->>Favorite: new Favorite()
+        activate Favorite
+        
+        Favorite->>DB: DELETE FROM user_favorites
+        activate DB
+        
+        alt Record exists
+            DB-->>Favorite: Delete success
+            Favorite-->>FC: true
+            FC-->>API: Success
+            API-->>Frontend: 200 OK
+        else Record not found
+            DB-->>Favorite: No rows affected
+            Favorite-->>FC: true (no error)
+            FC-->>API: Success
+            API-->>Frontend: 200 OK
+        else Database error
+            DB-->>Favorite: Error
+            Favorite-->>FC: false
+            FC-->>API: Error: Failed to remove from favorites
+            API-->>Frontend: 500 Internal Server Error
+        end
+        
+        deactivate DB
+        deactivate Favorite
+    end
+    
+    deactivate FC
+    deactivate API 

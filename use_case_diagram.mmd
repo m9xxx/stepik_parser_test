@@ -1,0 +1,58 @@
+graph TB
+    %% Actors
+    Admin((Администратор))
+    Guest((Гость))
+    RegUser((Зарегистрированный пользователь))
+
+    %% Use Cases
+    subgraph "Администрирование"
+        DataUpdate[Запуск обновления данных]
+        PlatformManage[Управление платформами]
+        UserManage[Управление пользователями]
+    end
+
+    subgraph "Основная функциональность"
+        SearchCourses[Поиск курсов]
+        ViewDetails[Просмотр деталей курса]
+        ViewCourses[Просмотр списка курсов]
+    end
+
+    subgraph "Пользовательские операции"
+        Register[Регистрация]
+        Auth[Авторизация]
+        ViewFavorites[Просмотр избранного]
+        AddFavorite[Добавление в избранное]
+        RemoveFavorite[Удаление из избранного]
+        Logout[Выход]
+    end
+
+    %% Relationships
+    Admin --> DataUpdate
+    Admin --> PlatformManage
+    Admin --> UserManage
+    Admin --> SearchCourses
+    Admin --> ViewDetails
+    Admin --> ViewCourses
+
+    Guest --> SearchCourses
+    Guest --> ViewDetails
+    Guest --> ViewCourses
+    Guest --> Register
+    Guest --> Auth
+
+    RegUser --> SearchCourses
+    RegUser --> ViewDetails
+    RegUser --> ViewCourses
+    RegUser --> Register
+    RegUser --> Auth
+    RegUser --> ViewFavorites
+    RegUser --> AddFavorite
+    RegUser --> RemoveFavorite
+    RegUser --> Logout
+
+    %% Styles
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#fff,stroke:#333,stroke-width:1px
+    
+    class Admin,Guest,RegUser actor
+    class DataUpdate,PlatformManage,UserManage,SearchCourses,ViewDetails,ViewCourses,Register,Auth,ViewFavorites,AddFavorite,RemoveFavorite,Logout usecase 

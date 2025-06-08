@@ -21,8 +21,10 @@ RewriteRule ^ index.php [QSA,L]
 
 # Разрешаем CORS
 Header set Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
-Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, X-CSRF-TOKEN"
+Header set Access-Control-Allow-Credentials "true"
+Header set Access-Control-Max-Age "3600"
 
 # Обработка OPTIONS запросов
 RewriteCond %{REQUEST_METHOD} OPTIONS

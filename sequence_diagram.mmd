@@ -1,0 +1,62 @@
+sequenceDiagram
+    participant Frontend
+    participant API as API (api.php)
+    participant CC as CourseController
+    participant CS as CourseService
+    participant PS as ParserService
+    participant JDR as JsonDataReader
+    participant Course as Course/CourseDB
+    participant DB as Database
+
+    %% Получение списка курсов
+    Frontend->>API: GET /api/v1/courses
+    API->>CC: index()
+    CC->>CS: getAllCourses()
+    CS->>Course: search()
+    Course->>DB: execute query
+    DB-->>Course: courses data
+    Course-->>CS: Course objects
+    CS-->>CC: Course objects
+    CC-->>API: JSON response
+    API-->>Frontend: Courses list
+
+    %% Поиск курсов
+    Frontend->>API: GET /api/v1/courses/search?q=query
+    API->>CC: search()
+    CC->>CS: searchCourses(query, filters)
+    CS->>Course: search(filters)
+    Course->>DB: execute search query
+    DB-->>Course: filtered courses
+    Course-->>CS: Course objects
+    CS-->>CC: Course objects
+    CC-->>API: JSON response
+    API-->>Frontend: Search results
+
+    %% Импорт курсов
+    Frontend->>API: POST /api/v1/courses/import
+    API->>CC: importCourses()
+    CC->>CS: importCoursesFromJson()
+    CS->>JDR: readStepikCourses()
+    JDR-->>CS: stepik courses
+    CS->>JDR: readSkillboxCourses()
+    JDR-->>CS: skillbox courses
+    CS->>JDR: readGeekBrainsCourses()
+    JDR-->>CS: geekbrains courses
+    CS->>Course: save() for each course
+    Course->>DB: insert/update courses
+    DB-->>Course: success/failure
+    Course-->>CS: import results
+    CS-->>CC: import summary
+    CC-->>API: JSON response
+    API-->>Frontend: Import results
+
+    %% Запуск парсеров
+    Frontend->>API: POST /api/v1/parsers/run/{parser}
+    API->>CC: runParser(parser)
+    CC->>PS: runSpecificParser(parser)
+    PS->>PS: execute parser
+    PS->>DB: save parsed data
+    DB-->>PS: success/failure
+    PS-->>CC: parsing results
+    CC-->>API: JSON response
+    API-->>Frontend: Parser status 

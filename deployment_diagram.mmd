@@ -1,0 +1,48 @@
+graph TB
+    subgraph "CDN Layer"
+        CDN[Cloudflare CDN<br/>SSL + Cache]
+    end
+
+    subgraph "Frontend Tier"
+        STATIC[Static Hosting<br/>GitHub Pages/Netlify]
+    end
+
+    subgraph "Application Tier"
+        LB[Load Balancer<br/>Nginx]
+        APP[API Server<br/>PHP-FPM + Nginx]
+        CACHE[Redis Cache<br/>Course Data + Sessions]
+    end
+
+    subgraph "Database Tier"
+        MYSQL[MySQL Database]
+        BACKUP[Automated Backups]
+    end
+
+    subgraph "Scheduled Tasks"
+        CRON[Cron Jobs<br/>Course Parsers]
+    end
+
+    %% Connections
+    CLIENT[Web Browser] -->|HTTPS| CDN
+    CDN -->|HTTPS| STATIC
+    CDN -->|HTTPS| LB
+    LB -->|HTTP| APP
+    APP -->|TCP| CACHE
+    APP -->|TCP| MYSQL
+    CRON -->|Updates| MYSQL
+    MYSQL -.->|Backup| BACKUP
+
+    %% Styles
+    classDef cdn fill:#f9f,stroke:#333,stroke-width:2px
+    classDef static fill:#ff9,stroke:#333,stroke-width:2px
+    classDef app fill:#9f9,stroke:#333,stroke-width:2px
+    classDef db fill:#99f,stroke:#333,stroke-width:2px
+    classDef cache fill:#f99,stroke:#333,stroke-width:2px
+    classDef cron fill:#9ff,stroke:#333,stroke-width:2px
+    
+    class CDN cdn
+    class STATIC static
+    class APP,LB app
+    class MYSQL,BACKUP db
+    class CACHE cache
+    class CRON cron 

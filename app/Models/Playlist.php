@@ -94,11 +94,56 @@ class Playlist
         return $stmt->fetchAll();
     }
 
+    public static function searchPlaylists($query, $isPublic = true, $userId = null, $limit = 20, $offset = 0) 
+    {
+        $db = Database::getInstance()->getConnection();
+        $params = [];
+        $where = [];
+
+        // Добавляем условие поиска по названию и описанию
+        if (!empty($query)) {
+            $where[] = "(p.name LIKE ? OR p.description LIKE ?)";
+            $searchTerm = '%' . $query . '%';
+            $params[] = $searchTerm;
+            $params[] = $searchTerm;
+        }
+
+        // Добавляем условие для публичных/приватных подборок
+        if ($isPublic) {
+            $where[] = "p.is_public = 1";
+        }
+
+        // Если указан userId, ищем подборки конкретного пользователя
+        if ($userId !== null) {
+            $where[] = "p.user_id = ?";
+            $params[] = $userId;
+        }
+
+        $whereClause = !empty($where) ? "WHERE " . implode(" AND ", $where) : "";
+
+        $stmt = $db->prepare("
+            SELECT p.*, u.username, COUNT(pc.course_id) as course_count
+            FROM playlists p
+            JOIN users u ON p.user_id = u.id
+            LEFT JOIN playlist_courses pc ON p.id = pc.playlist_id
+            {$whereClause}
+            GROUP BY p.id
+            ORDER BY p.created_at DESC
+            LIMIT ? OFFSET ?
+        ");
+        
+        $params[] = $limit;
+        $params[] = $offset;
+        
+        $stmt->execute($params);
+        return $stmt->fetchAll();
+    }
+
     public function addCourse($courseId, $position = 0) 
     {
         $db = Database::getInstance()->getConnection();
         $stmt = $db->prepare("
-            INSERT IGNORE INTO playlist_courses (playlist_id, course_id, position) 
+            INSERT INTO playlist_courses (playlist_id, course_id, position) 
             VALUES (?, ?, ?)
         ");
         

@@ -10,7 +10,7 @@ class FavoriteController
     {
         // Получаем JSON данные из тела запроса
         $jsonData = json_decode(file_get_contents('php://input'), true);
-        
+
         $userId = $jsonData['user_id'] ?? null;
         $courseId = $jsonData['course_id'] ?? null;
 

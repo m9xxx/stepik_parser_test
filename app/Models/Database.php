@@ -80,6 +80,27 @@ class Database
             UNIQUE KEY unique_course_per_platform (platform_id, external_id)
         );
 
+        CREATE TABLE IF NOT EXISTS playlists (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            user_id INT NOT NULL,
+            name VARCHAR(255) NOT NULL,
+            description TEXT,
+            is_public BOOLEAN DEFAULT false,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        );
+
+        CREATE TABLE IF NOT EXISTS playlist_courses (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            playlist_id INT NOT NULL,
+            course_id INT NOT NULL,
+            position INT DEFAULT 0,
+            added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (playlist_id) REFERENCES playlists(id) ON DELETE CASCADE,
+            FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+        );
+
         INSERT IGNORE INTO platforms (name, url) VALUES 
         ('stepik', 'https://stepik.org'),
         ('skillbox', 'https://skillbox.ru'),
