@@ -2,8 +2,15 @@
 namespace App\Controllers\API;
 
 use App\Models\User;
+use App\Models\Database;
 
 class UserController {
+    private $db;
+
+    public function __construct() {
+        $this->db = Database::getInstance()->getConnection();
+    }
+
     public function updateProfile() {
         try {
             // Получаем данные из тела запроса
@@ -159,5 +166,76 @@ class UserController {
                 'message' => 'Ошибка при обновлении пароля: ' . $e->getMessage()
             ]);
         }
+    }
+
+    // Получение нескольких пользователей по ID
+    public function getMultiple() {
+        try {
+            $ids = isset($_GET['ids']) ? explode(',', $_GET['ids']) : [];
+            
+            if (empty($ids)) {
+                throw new \Exception('Parameter ids is required', 400);
+            }
+
+            // Преобразуем строковые ID в числа и фильтруем невалидные значения
+            $ids = array_filter(array_map('intval', $ids));
+            
+            if (empty($ids)) {
+                throw new \Exception('No valid IDs provided', 400);
+            }
+
+            $placeholders = str_repeat('?,', count($ids) - 1) . '?';
+            $stmt = $this->db->prepare("
+                SELECT id, username, email, created_at
+                FROM users
+                WHERE id IN ($placeholders)
+            ");
+            
+            $stmt->execute($ids);
+            $users = $stmt->fetchAll();
+
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => true,
+                'data' => $users
+            ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        } catch (\Exception $e) {
+            $this->sendError($e->getMessage(), $e->getCode());
+        }
+    }
+
+    // Получение одного пользователя по ID
+    public function show($id) {
+        try {
+            $stmt = $this->db->prepare("
+                SELECT id, username, email, created_at
+                FROM users
+                WHERE id = ?
+            ");
+            
+            $stmt->execute([$id]);
+            $user = $stmt->fetch();
+
+            if (!$user) {
+                throw new \Exception('Пользователь не найден', 404);
+            }
+
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => true,
+                'data' => $user
+            ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        } catch (\Exception $e) {
+            $this->sendError($e->getMessage(), $e->getCode());
+        }
+    }
+
+    private function sendError($message, $code = 500) {
+        header('Content-Type: application/json');
+        http_response_code($code ?: 500);
+        echo json_encode([
+            'success' => false,
+            'message' => $message
+        ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     }
 }

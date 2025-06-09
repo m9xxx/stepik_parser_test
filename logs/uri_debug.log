@@ -15267,3 +15267,1863 @@ urce=geekbrains,skillbox,stepik
     [3] => search
 )
 
+2025-06-08 18:28:39 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:28:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:28:39 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:28:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:28:40 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:28:40 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:28:40 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:28:40 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:28:40 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:28:40 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=3&source=geekbrains,skillbox,stepik
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=3
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/users?ids=1
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=34&source=geekbrains,skillbox,stepik
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=34
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:28:41 Original URI: /stepik_parser_test/public/api/v1/users?ids=1
+2025-06-08 18:28:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:30:20 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:30:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:30:20 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:30:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:30:20 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:30:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=4&source=geekbrains,skillbox,stepik
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=4
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/users?ids=1
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=45&source=geekbrains,skillbox,stepik
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=45
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:30:23 Original URI: /stepik_parser_test/public/api/v1/users?ids=1
+2025-06-08 18:30:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:30:27 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=1
+2025-06-08 18:30:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:30:27 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:30:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:30:28 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=1
+2025-06-08 18:30:28 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:30:28 Original URI: /stepik_parser_test/public/api/v1/playlists/3/courses?user_id=1
+2025-06-08 18:30:28 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 3
+    [4] => courses
+)
+
+2025-06-08 18:30:30 Original URI: /stepik_parser_test/public/api/v1/playlists/2/courses?user_id=1
+2025-06-08 18:30:30 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 2
+    [4] => courses
+)
+
+2025-06-08 18:30:32 Original URI: /stepik_parser_test/public/api/v1/playlists/1/courses?user_id=1
+2025-06-08 18:30:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 1
+    [4] => courses
+)
+
+2025-06-08 18:30:33 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:30:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:30:33 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:30:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:30:35 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:30:35 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:30:36 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:30:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:30:36 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:30:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:30:38 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:30:38 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:30:38 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:30:38 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:30:38 Original URI: /stepik_parser_test/public/api/v1/users?ids=17,1
+2025-06-08 18:30:38 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:30:39 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:30:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:30:39 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:30:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:30:39 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:30:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:30:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:30:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:30:41 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:30:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:30:41 Original URI: /stepik_parser_test/public/api/v1/users?ids=17,1
+2025-06-08 18:30:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:31:20 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:31:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:31:20 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:31:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:31:25 Original URI: /stepik_parser_test/public/api/v1/favorites/add
+2025-06-08 18:31:25 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+    [3] => add
+)
+
+2025-06-08 18:31:27 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:31:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:31:28 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:31:28 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:31:28 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:31:28 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:31:29 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=5&source=geekbrains,skillbox,stepik
+2025-06-08 18:31:29 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:31:29 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=5
+2025-06-08 18:31:29 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:31:29 Original URI: /stepik_parser_test/public/api/v1/users?ids=1
+2025-06-08 18:31:29 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:31:30 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:31:30 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:31:31 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:31:31 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:31:31 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:31:31 Original URI: /stepik_parser_test/public/api/v1/users?ids=17,1
+2025-06-08 18:31:31 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:31:34 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:31:34 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:31:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:31:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:31:36 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:31:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:31:36 Original URI: /stepik_parser_test/public/api/v1/users?ids=17,1
+2025-06-08 18:31:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:32:46 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:32:46 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:33:21 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:33:21 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:33:46 Original URI: /stepik_parser_test/public/api/v1/users?ids=17,1
+2025-06-08 18:33:46 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => users
+)
+
+2025-06-08 18:34:48 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:34:48 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:34:49 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:34:49 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:34:49 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:34:49 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:35:09 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:35:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:35:09 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:35:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:35:10 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=1
+2025-06-08 18:35:10 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:35:42 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=3&source=geekbrains,skillbox,stepik
+2025-06-08 18:35:42 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:35:42 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=3
+2025-06-08 18:35:42 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:35:42 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=34&source=geekbrains,skillbox,stepik
+2025-06-08 18:35:42 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:35:42 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=34
+2025-06-08 18:35:42 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:35:44 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:35:44 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:35:44 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:35:44 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:13 Original URI: /stepik_parser_test/public/api/v1/auth/register
+2025-06-08 18:36:13 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => auth
+    [3] => register
+)
+
+2025-06-08 18:36:14 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:36:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:36:14 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:36:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:36:19 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:36:19 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:36:20 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:36:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:36:20 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:36:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:36:22 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=r&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:22 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:22 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=r
+2025-06-08 18:36:22 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:24 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:24 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:24 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:36:24 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D0%B5&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D0%B5
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D0%B5%D1%80&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D0%B5%D1%80
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D0%B5%D1%80%D0%BD&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:32 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D0%B5%D1%80%D0%BD
+2025-06-08 18:36:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D0%B5%D1%80&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D0%B5%D1%80
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D0%B5&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D0%B5
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:33 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87
+2025-06-08 18:36:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:34 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D1%91&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:34 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:34 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D1%91
+2025-06-08 18:36:34 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:34 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D1%91%D1%80&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:34 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:34 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D1%91%D1%80
+2025-06-08 18:36:34 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:35 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D1%91%D1%80%D0%BD&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:35 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:35 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D1%91%D1%80%D0%BD
+2025-06-08 18:36:35 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D1%91%D1%80&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D1%91%D1%80
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87%D1%91
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87%D1%91&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%87&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%87
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:36 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82
+2025-06-08 18:36:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC%D0%BD&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:37 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC%D0%BD
+2025-06-08 18:36:37 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:52 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=r&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:52 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:52 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=r
+2025-06-08 18:36:52 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:36:54 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:54 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:55 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:36:55 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:36:55 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:36:55 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:01 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:01 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82
+2025-06-08 18:37:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:01 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:01 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5
+2025-06-08 18:37:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC%D0%BD&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC%D0%BD
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC%D0%BD%D1%8B&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC%D0%BD%D1%8B
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:02 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B9&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:02 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:03 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B9
+2025-06-08 18:37:03 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:05 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:05 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:09 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:09 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:37:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:12 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:37:12 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:37:27 Original URI: /stepik_parser_test/public/api/v1/playlists
+2025-06-08 18:37:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:37:27 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses
+2025-06-08 18:37:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:37:30 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:37:30 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:37:31 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses
+2025-06-08 18:37:31 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:37:32 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:37:32 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:37:33 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses
+2025-06-08 18:37:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:37:35 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:37:35 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:37:36 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses
+2025-06-08 18:37:36 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:37:39 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:39 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:41 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-08 18:37:41 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:37:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-08 18:37:41 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:37:54 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses?user_id=18
+2025-06-08 18:37:54 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:37:56 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses?user_id=18
+2025-06-08 18:37:56 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:39:08 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:39:08 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:18 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-08 18:39:18 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:20 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik
+2025-06-08 18:39:20 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:23 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:38 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:38 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:40 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:40 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:43 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:43 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:44 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:44 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:39:48 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=skillbox,stepik,geekbrains
+2025-06-08 18:39:48 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:45:11 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:11 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:11 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:11 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:12 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:12 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:13 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:13 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:14 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:15 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:15 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:15 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:15 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:16 Original URI: /stepik_parser_test/public/api/v1/playlists/5/courses?user_id=18
+2025-06-08 18:45:16 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 5
+    [4] => courses
+)
+
+2025-06-08 18:45:19 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-08 18:45:19 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-08 18:45:19 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-08 18:45:19 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-08 18:45:19 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:19 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:21 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=&source=skillbox,stepik
+2025-06-08 18:45:21 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-08 18:45:22 Original URI: /stepik_parser_test/public/api/v1/favorites/add
+2025-06-08 18:45:22 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+    [3] => add
+)
+
+2025-06-08 18:45:23 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:23 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:23 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:24 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:24 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:26 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:26 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:27 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:27 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:27 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:28 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:28 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-08 18:45:29 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-08 18:45:29 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-08 18:45:30 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-08 18:45:30 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:48:56 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-09 06:48:56 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:49:01 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-09 06:49:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-09 06:49:01 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-09 06:49:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-09 06:49:01 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=18
+2025-06-09 06:49:01 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:49:09 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=f&source=geekbrains,skillbox,stepik
+2025-06-09 06:49:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-09 06:49:09 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=f
+2025-06-09 06:49:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-09 06:49:13 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-09 06:49:13 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:49:33 Original URI: /stepik_parser_test/public/api/v1/playlists
+2025-06-09 06:49:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:49:33 Original URI: /stepik_parser_test/public/api/v1/playlists/6/courses
+2025-06-09 06:49:33 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 6
+    [4] => courses
+)
+
+2025-06-09 06:49:40 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=f&source=geekbrains,skillbox
+2025-06-09 06:49:40 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-09 06:49:42 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-09 06:49:42 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:49:44 Original URI: /stepik_parser_test/public/api/v1/playlists/6/courses
+2025-06-09 06:49:44 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 6
+    [4] => courses
+)
+
+2025-06-09 06:49:46 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=18
+2025-06-09 06:49:46 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:49:47 Original URI: /stepik_parser_test/public/api/v1/playlists/6/courses
+2025-06-09 06:49:47 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => 6
+    [4] => courses
+)
+
+2025-06-09 06:49:50 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=3&source=geekbrains,skillbox
+2025-06-09 06:49:50 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-09 06:49:50 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=3
+2025-06-09 06:49:50 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+
+2025-06-09 06:50:00 Original URI: /stepik_parser_test/public/api/v1/auth/login
+2025-06-09 06:50:00 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => auth
+    [3] => login
+)
+
+2025-06-09 06:50:00 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=17
+2025-06-09 06:50:00 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:50:00 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-09 06:50:00 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-09 06:50:03 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=17
+2025-06-09 06:50:03 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:50:03 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=17
+2025-06-09 06:50:03 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:50:04 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=17
+2025-06-09 06:50:04 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:50:05 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-09 06:50:05 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-09 06:50:05 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-09 06:50:05 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-09 06:50:06 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=17
+2025-06-09 06:50:06 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:50:08 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=17
+2025-06-09 06:50:08 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:50:08 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=17
+2025-06-09 06:50:08 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:50:09 Original URI: /stepik_parser_test/public/api/v1/playlists?user_id=17
+2025-06-09 06:50:09 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+)
+
+2025-06-09 06:50:14 Original URI: /stepik_parser_test/public/api/v1/courses
+2025-06-09 06:50:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+)
+
+2025-06-09 06:50:14 Original URI: /stepik_parser_test/public/api/v1/platforms
+2025-06-09 06:50:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => platforms
+)
+
+2025-06-09 06:50:14 Original URI: /stepik_parser_test/public/api/v1/favorites?user_id=17
+2025-06-09 06:50:14 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => favorites
+)
+
+2025-06-09 06:50:24 Original URI: /stepik_parser_test/public/api/v1/courses/search?search=%D0%BA&source=geekbrains,skillbox,stepik
+2025-06-09 06:50:24 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => courses
+    [3] => search
+)
+
+2025-06-09 06:50:24 Original URI: /stepik_parser_test/public/api/v1/playlists/search?search=%D0%BA
+2025-06-09 06:50:24 Processed URI parts: Array
+(
+    [0] => api
+    [1] => v1
+    [2] => playlists
+    [3] => search
+)
+

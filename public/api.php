@@ -204,6 +204,18 @@ try {
                 $action = 'updatePassword';
             }
         }
+    } elseif (count($uriParts) >= 3 && $uriParts[0] === 'api' && $uriParts[1] === 'v1' && $uriParts[2] === 'users') {
+        require_once __DIR__ . '/../app/Controllers/API/UserController.php';
+        $controller = new \App\Controllers\API\UserController();
+
+        if (count($uriParts) === 3 && $_SERVER['REQUEST_METHOD'] === 'GET') {
+            // GET /api/v1/users?ids=1,2,3 - Получить нескольких пользователей
+            $action = 'getMultiple';
+        } elseif (count($uriParts) === 4 && is_numeric($uriParts[3]) && $_SERVER['REQUEST_METHOD'] === 'GET') {
+            // GET /api/v1/users/{id} - Получить одного пользователя
+            $action = 'show';
+            $params[] = $uriParts[3];
+        }
     }
     
     // Добавляем отладочную информацию
